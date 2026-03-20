@@ -40,7 +40,10 @@ const linkFields = {
 };
 
 export default config({
-  storage: { kind: 'local' },
+  storage: {
+    kind: 'github',
+    repo: 'kemdon/3.6-2000-u-clone-astro-keystatic',
+  },
   ui: {
     brand: { name: 'Sunwing Astro CMS' },
     navigation: {

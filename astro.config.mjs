@@ -3,7 +3,7 @@ import react from '@astrojs/react';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://www.birthdaycakecandle.com',
+  site: 'https://ugo.zhidaola.top',
   output: 'server',
   server: {
     host: true,
