@@ -1,10 +1,4 @@
-import { readdir } from 'node:fs/promises';
-import path from 'node:path';
 import { reader } from './keystatic';
-
-const contentRoot = path.join(process.cwd(), 'content');
-
-type NestedRecord<T = any> = { slug: string; entry: T };
 type MediaEntry = {
   title?: string;
   assetType?: string;
@@ -14,18 +8,19 @@ type MediaEntry = {
   alt?: string | null;
   description?: string | null;
 };
+type PageEntry = NonNullable<Awaited<ReturnType<typeof reader.collections.pages.read>>>;
+type ProductEntry = NonNullable<Awaited<ReturnType<typeof reader.collections.products.read>>>;
+type NewsEntry = NonNullable<Awaited<ReturnType<typeof reader.collections.news.read>>>;
 
-async function readNestedCollection<T = any>(dirName: string, readEntry: (slug: string) => Promise<T | null>) {
-  const dirPath = path.join(contentRoot, dirName);
-  const names = await readdir(dirPath, { withFileTypes: true });
-  const slugs = names.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
-  const items = await Promise.all(
-    slugs.map(async (slug) => {
-      const entry = await readEntry(slug);
-      return entry ? { slug, entry } : null;
-    })
-  );
-  return items.filter(Boolean) as Array<NestedRecord<NonNullable<T>>>;
+const pageModules = import.meta.glob('../../content/pages/*/index.json', { eager: true, import: 'default' }) as Record<string, PageEntry>;
+const productModules = import.meta.glob('../../content/products/*/index.json', { eager: true, import: 'default' }) as Record<string, ProductEntry>;
+const newsModules = import.meta.glob('../../content/news/*/index.json', { eager: true, import: 'default' }) as Record<string, NewsEntry>;
+
+function entriesFromModules<T>(modules: Record<string, T>) {
+  return Object.entries(modules).map(([filePath, entry]) => ({
+    slug: filePath.split('/').at(-2) || '',
+    entry,
+  }));
 }
 
 async function getMediaMap() {
@@ -117,12 +112,12 @@ export async function getProductsPage() {
 }
 
 export async function getPages() {
-  const pages = await readNestedCollection('pages', (slug) => reader.collections.pages.read(slug));
+  const pages = entriesFromModules(pageModules);
   return Promise.all(pages.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
 }
 
 export async function getPageBySlug(slug: string) {
-  const page = await reader.collections.pages.read(slug);
+  const page = entriesFromModules(pageModules).find((item) => item.slug === slug)?.entry ?? null;
   return page ? resolveContent(page) : null;
 }
 
@@ -151,7 +146,7 @@ export async function getCategoriesBySlugs(slugs: readonly (string | null)[]) {
 }
 
 export async function getProducts() {
-  const products = await readNestedCollection('products', (slug) => reader.collections.products.read(slug));
+  const products = entriesFromModules(productModules);
   return Promise.all(products.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
 }
 
@@ -166,7 +161,7 @@ export async function getProductRecordBySlug(categorySlug: string, productSlug: 
 }
 
 export async function getNews() {
-  const items = await readNestedCollection('news', (slug) => reader.collections.news.read(slug));
+  const items = entriesFromModules(newsModules);
   const resolved = await Promise.all(items.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
   return resolved.sort((a, b) => `${b.entry.publishedAt}`.localeCompare(`${a.entry.publishedAt}`));
 }
