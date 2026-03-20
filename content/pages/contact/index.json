@@ -3,8 +3,9 @@
   "slug": "contact",
   "summary": "If you have any inquiries or questions, please simply fill out this contact form.",
   "heroImage": {
-    "src": "/images/source/40494f75b899_unsplash_78a265wpio4-1-2546-!j.webp",
-    "alt": "Contact"
+    "src": "",
+    "alt": "Contact",
+    "media": "40494f75b899-unsplash-78a265wpio4-1-2546-j-1b1d164f"
   },
   "heroText": "If you have any inquiries or questions, please simply fill out this contact form.",
   "body": "",
@@ -69,8 +70,9 @@
     "title": "Contact",
     "description": "If you have any inquiries or questions, please simply fill out this contact form.",
     "image": {
-      "src": "/images/source/40494f75b899_unsplash_78a265wpio4-1-2546-!j.webp",
-      "alt": "Contact"
+      "src": "",
+      "alt": "Contact",
+      "media": "40494f75b899-unsplash-78a265wpio4-1-2546-j-1b1d164f"
     }
   }
 }

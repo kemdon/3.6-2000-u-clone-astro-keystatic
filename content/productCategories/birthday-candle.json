@@ -3,12 +3,14 @@
   "slug": "birthday-candle",
   "summary": "Sunwing birthday candles are designed for celebrations, parties, and retail markets, offering bright colors, stable burning, and consistent quality. Available in various shapes, sizes, and color options, our birthday candles support OEM and private label customization, including wax materials, packaging, and branding to meet wholesale and large-volume requirements.",
   "heroImage": {
-    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-    "alt": "Birthday Candle"
+    "src": "",
+    "alt": "Birthday Candle",
+    "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
   },
   "coverImage": {
-    "src": "/images/source/8320e1e08325_0f5963d9e41cb989bcf60c79315caa.webp",
-    "alt": "Birthday Candle"
+    "src": "",
+    "alt": "Birthday Candle",
+    "media": "8320e1e08325-0f5963d9e41cb989bcf60c79315caa-b97fcf14"
   },
   "introTitle": "Birthday Candle Solution",
   "introBody": "Sunwing birthday candles are designed for celebrations, parties, and retail markets, offering bright colors, stable burning, and consistent quality. Available in various shapes, sizes, and color options, our birthday candles support OEM and private label customization, including wax materials, packaging, and branding to meet wholesale and large-volume requirements.",
@@ -25,8 +27,9 @@
     "title": "Birthday Candle",
     "description": "Sunwing birthday candles are designed for celebrations, parties, and retail markets, offering bright colors, stable burning, and consistent quality. Available in various shapes, sizes, and color options, our birthday candles support OEM and private label customization, including wax materials, packaging, and branding to meet wholesale and large-volume requirements.",
     "image": {
-      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-      "alt": "Birthday Candle"
+      "src": "",
+      "alt": "Birthday Candle",
+      "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
     }
   }
 }

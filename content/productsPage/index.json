@@ -1,8 +1,9 @@
 {
   "title": "Products",
   "heroImage": {
-    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-    "alt": "Products"
+    "src": "",
+    "alt": "Products",
+    "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
   },
   "summary": "",
   "customOptionsHeading": {
@@ -14,8 +15,9 @@
       "title": "Candle type",
       "description": "Different wax materials can be selected based on market positioning and usage scenarios, including soy wax, paraffin wax, beeswax, and mixed wax solutions. We can achieve a professional balance among environmental attributes, combustion stability, fragrance diffusion ability and cost, to meet the needs of retail, gifts and brand customization.",
       "image": {
-        "src": "/images/source/0e9785a301f4_77cd1fa09372cb909af09d0024b5c3.webp",
-        "alt": "Candle type"
+        "src": "",
+        "alt": "Candle type",
+        "media": "0e9785a301f4-77cd1fa09372cb909af09d0024b5c3-e3ef5855"
       },
       "buttonLabel": "Get Better Quote",
       "buttonHref": "/contact"
@@ -24,8 +26,9 @@
       "title": "Customized fragrance design",
       "description": "Offer a rich range of fragrance types, including floral, fruity, woody, fresh and seasonal scents. At the same time, support for unscented candles or the development of exclusive fragrances, helping brands create unique olfactory memories and enhancing product recognition.",
       "image": {
-        "src": "/images/source/47f9727614c3_39bf371bc8eabc4e806ffdcb46ef93.webp",
-        "alt": "Customized fragrance design"
+        "src": "",
+        "alt": "Customized fragrance design",
+        "media": "47f9727614c3-39bf371bc8eabc4e806ffdcb46ef93-29be29ba"
       },
       "buttonLabel": "Get Better Quote",
       "buttonHref": "/contact"
@@ -34,8 +37,9 @@
       "title": "Color customization",
       "description": "Supports multiple color customization options, including single color, gradient color and special texture effects. Can be precisely tinted according to the brand VI or Pantone color codes to ensure that the appearance of the candles is highly consistent with the overall packaging style.",
       "image": {
-        "src": "/images/source/a3450b984c78_ba552e9fbc0409d34fce1e505494b6.webp",
-        "alt": "Color customization"
+        "src": "",
+        "alt": "Color customization",
+        "media": "a3450b984c78-ba552e9fbc0409d34fce1e505494b6-629baecf"
       },
       "buttonLabel": "Get Better Quote",
       "buttonHref": "/contact"
@@ -44,8 +48,9 @@
       "title": "Shape And Size",
       "description": "From standard cylindrical candles and cup-shaped candles to creative-shaped candles, all can be customized. The weight and size can be flexibly selected, suitable for various applications such as birthday candles, scented candles, home decorations or promotional gifts.",
       "image": {
-        "src": "/images/source/3dee5a1c13ef_6bcac2c648472e92d5642589832d02.webp",
-        "alt": "Shape And Size"
+        "src": "",
+        "alt": "Shape And Size",
+        "media": "3dee5a1c13ef-6bcac2c648472e92d5642589832d02-967197c4"
       },
       "buttonLabel": "Get Better Quote",
       "buttonHref": "/contact"
@@ -54,8 +59,9 @@
       "title": "Custom Packaging",
       "description": "Provide comprehensive packaging solutions, including glass jars, metal boxes, colorful boxes and gift boxes. Support eco-friendly materials, high-end customization and e-commerce-friendly packaging designs, to enhance product value and market competitiveness.",
       "image": {
-        "src": "/images/source/79f81b378336_27912fe2306f68eedb5b798c1d9033.webp",
-        "alt": "Custom Packaging"
+        "src": "",
+        "alt": "Custom Packaging",
+        "media": "79f81b378336-27912fe2306f68eedb5b798c1d9033-c123206c"
       },
       "buttonLabel": "Get Better Quote",
       "buttonHref": "/contact"
@@ -64,8 +70,9 @@
       "title": "LOGO Customization",
       "description": "Support silk-screening, labeling and full-color printing techniques. Customizable with brand LOGO, product information, blessing words and QR codes. Helps customers create a professional and unified brand image, suitable for OEM/ODM mass production.",
       "image": {
-        "src": "/images/source/50620cd38f97_logo-customization-!j.webp",
-        "alt": "LOGO Customization"
+        "src": "",
+        "alt": "LOGO Customization",
+        "media": "50620cd38f97-logo-customization-j-24a00e51"
       },
       "buttonLabel": "Get Better Quote",
       "buttonHref": "/contact"
@@ -81,8 +88,9 @@
     "title": "Products",
     "description": "",
     "image": {
-      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-      "alt": "Products"
+      "src": "",
+      "alt": "Products",
+      "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
     }
   }
 }

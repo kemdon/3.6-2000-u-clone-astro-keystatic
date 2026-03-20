@@ -3,8 +3,9 @@
   "slug": "about-us",
   "summary": "Our core guiding principles include exquisite craftsmanship, high-quality materials, and sustainable practices that are friendly to the environment.",
   "heroImage": {
-    "src": "/images/source/31c992c8eab4_banner-inner-1-!j.webp",
-    "alt": "About Us"
+    "src": "",
+    "alt": "About Us",
+    "media": "31c992c8eab4-banner-inner-1-j-f89d35e2"
   },
   "heroText": "Our core guiding principles include exquisite craftsmanship, high-quality materials, and sustainable practices that are friendly to the environment.",
   "body": "Qingdao Sunwing Technology Service Co., Ltd. is a professional candle supply company based in Qingdao City,China.with a focus on candle production industries,which covers happy birthday candles,scented candles,dinner candles, tealight candles and bright candles,etc.\n\nWe provide flexible candle customize service for our customers to Integrate into the market as soon as possible,Our commitment to reliability, competitive pricing, and transparent partnership makes us the ideal choice for businesses seeking to optimize their global supply chain.\n\nPlease don't hesitate to contact us if you have any questions.",
@@ -14,8 +15,9 @@
       "title": "Qingdao Sunwing  Technology Service Co., Ltd.",
       "description": "Qingdao Sunwing Technology Service Co., Ltd. is a professional candle supply company based in Qingdao City,China.with a focus on candle production industries,which covers happy birthday candles,scented candles,dinner candles, tealight candles and bright candles,etc.\n\nWe provide flexible candle customize service for our customers to Integrate into the market as soon as possible,Our commitment to reliability, competitive pricing, and transparent partnership makes us the ideal choice for businesses seeking to optimize their global supply chain.\n\nPlease don't hesitate to contact us if you have any questions.",
       "image": {
-        "src": "/images/source/50e2b47b8e37_08cdef3e519673ff0c411180784ae0.webp",
-        "alt": "About Us"
+        "src": "",
+        "alt": "About Us",
+        "media": "50e2b47b8e37-08cdef3e519673ff0c411180784ae0-e1457cd1"
       },
       "button": {
         "label": "",
@@ -56,36 +58,44 @@
   },
   "gallery": [
     {
-      "src": "/images/source/ac5936936457_baf28d7cd5831151a1db7b670c5639.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "ac5936936457-baf28d7cd5831151a1db7b670c5639-fbf0d055"
     },
     {
-      "src": "/images/source/b3a00549f50f_33a79516e5a9b603fe51c199b71437.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "b3a00549f50f-33a79516e5a9b603fe51c199b71437-d698c43f"
     },
     {
-      "src": "/images/source/9395662a28cc_7447f54546f2ea633e79be6e43818c.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "9395662a28cc-7447f54546f2ea633e79be6e43818c-e10c8f2d"
     },
     {
-      "src": "/images/source/143ab6b2467b_c960bc435d4ba7a2a49e75ffacd3af.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "143ab6b2467b-c960bc435d4ba7a2a49e75ffacd3af-75941f04"
     },
     {
-      "src": "/images/source/1fb3695946e8_3fe8cb63af4632f6e357c75b13ad3a.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "1fb3695946e8-3fe8cb63af4632f6e357c75b13ad3a-464c328f"
     },
     {
-      "src": "/images/source/175501f23580_7a385a3126767de2bf72599180d77a.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "175501f23580-7a385a3126767de2bf72599180d77a-56504dd4"
     },
     {
-      "src": "/images/source/de0525143540_a6cf238a478f37694ff5f00c756279.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "de0525143540-a6cf238a478f37694ff5f00c756279-6bb42e33"
     },
     {
-      "src": "/images/source/b2c50b185614_880a7323dc92aac6eeb0ce8e8e685d.webp",
-      "alt": "factory"
+      "src": "",
+      "alt": "factory",
+      "media": "b2c50b185614-880a7323dc92aac6eeb0ce8e8e685d-71e20818"
     }
   ],
   "linkedCategorySlugs": [],
@@ -93,8 +103,9 @@
     "title": "FAQ",
     "description": "",
     "image": {
-      "src": "/images/source/0d73fb872757_pexels-max-laurell-1958001-106.webp",
-      "alt": "faq"
+      "src": "",
+      "alt": "faq",
+      "media": "0d73fb872757-pexels-max-laurell-1958001-106-dc433b9f"
     }
   },
   "faq": [
@@ -140,8 +151,9 @@
     "title": "About Us",
     "description": "Our core guiding principles include exquisite craftsmanship, high-quality materials, and sustainable practices that are friendly to the environment.",
     "image": {
-      "src": "/images/source/31c992c8eab4_banner-inner-1-!j.webp",
-      "alt": "About Us"
+      "src": "",
+      "alt": "About Us",
+      "media": "31c992c8eab4-banner-inner-1-j-f89d35e2"
     }
   }
 }

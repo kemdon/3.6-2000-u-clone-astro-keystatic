@@ -3,12 +3,14 @@
   "slug": "dinner-candle",
   "summary": "A dinner candle is a classic choice for adding warmth and sophistication to any meal. Typically unscented and designed to burn cleanly, these candles are perfect for creating a soft, inviting ambiance on dining tables, Available in various sizes and colors, they often feature elegant designs like tapered or pillar styles, enhancing the visual appeal of your space. The gentle flicker of a dinner candle fosters a cozy atmosphere.",
   "heroImage": {
-    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-    "alt": "Dinner Candle"
+    "src": "",
+    "alt": "Dinner Candle",
+    "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
   },
   "coverImage": {
-    "src": "/images/source/41c198223483_1ac914871c9d3f616170583cee9187.webp",
-    "alt": "Dinner Candle"
+    "src": "",
+    "alt": "Dinner Candle",
+    "media": "41c198223483-1ac914871c9d3f616170583cee9187-31f9706d"
   },
   "introTitle": "Dinner Candle Solution",
   "introBody": "A dinner candle is a classic choice for adding warmth and sophistication to any meal. Typically unscented and designed to burn cleanly, these candles are perfect for creating a soft, inviting ambiance on dining tables, Available in various sizes and colors, they often feature elegant designs like tapered or pillar styles, enhancing the visual appeal of your space. The gentle flicker of a dinner candle fosters a cozy atmosphere.",
@@ -25,8 +27,9 @@
     "title": "Dinner Candle",
     "description": "A dinner candle is a classic choice for adding warmth and sophistication to any meal. Typically unscented and designed to burn cleanly, these candles are perfect for creating a soft, inviting ambiance on dining tables, Available in various sizes and colors, they often feature elegant designs like tapered or pillar styles, enhancing the visual appeal of your space. The gentle flicker of a dinner candle fosters a cozy atmosphere.",
     "image": {
-      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-      "alt": "Dinner Candle"
+      "src": "",
+      "alt": "Dinner Candle",
+      "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
     }
   }
 }

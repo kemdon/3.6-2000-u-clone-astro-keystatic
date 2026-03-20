@@ -3,12 +3,14 @@
   "slug": "tealight-candle",
   "summary": "Tealight candles are small, compact candles typically housed in a metal or plastic cup. They are known for their practical size and versatility, making them ideal for creating a cozy ambiance in homes, spas, or outdoor settings. With a burn time of around 3-5 hours, tealights are perfect for short-term use, such as during dinner parties, romantic evenings, or decorative displays. They come in various colors and scents, offering options to match any mood or theme.",
   "heroImage": {
-    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-    "alt": "Tealight Candle"
+    "src": "",
+    "alt": "Tealight Candle",
+    "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
   },
   "coverImage": {
-    "src": "/images/source/0dd9a3831622_6b7edd48132430ece9b5090b608e12.webp",
-    "alt": "Tealight Candle"
+    "src": "",
+    "alt": "Tealight Candle",
+    "media": "0dd9a3831622-6b7edd48132430ece9b5090b608e12-549d7917"
   },
   "introTitle": "Tealight Candle Solution",
   "introBody": "Tealight candles are small, compact candles typically housed in a metal or plastic cup. They are known for their practical size and versatility, making them ideal for creating a cozy ambiance in homes, spas, or outdoor settings. With a burn time of around 3-5 hours, tealights are perfect for short-term use, such as during dinner parties, romantic evenings, or decorative displays. They come in various colors and scents, offering options to match any mood or theme.",
@@ -25,8 +27,9 @@
     "title": "Tealight Candle",
     "description": "Tealight candles are small, compact candles typically housed in a metal or plastic cup. They are known for their practical size and versatility, making them ideal for creating a cozy ambiance in homes, spas, or outdoor settings. With a burn time of around 3-5 hours, tealights are perfect for short-term use, such as during dinner parties, romantic evenings, or decorative displays. They come in various colors and scents, offering options to match any mood or theme.",
     "image": {
-      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-      "alt": "Tealight Candle"
+      "src": "",
+      "alt": "Tealight Candle",
+      "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
     }
   }
 }

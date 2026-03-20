@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "import:clone": "tsx scripts/import-clone.ts",
+    "import:media-library": "tsx scripts/import-media-library.ts",
     "sync:assets": "tsx scripts/sync-assets.ts",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",

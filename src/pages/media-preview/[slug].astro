@@ -1,0 +1,36 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { reader } from '@/lib/keystatic';
+
+export async function getStaticPaths() {
+  const items = await reader.collections.mediaLibrary.all();
+  return items.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const entry = item.entry;
+const previewSrc = entry.previewImage || entry.image || entry.file || '';
+---
+
+<BaseLayout title={entry.title || 'Media Preview'} description={entry.description || ''} image={entry.previewImage || entry.image || ''}>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Media Preview</div>
+        <h1 class="section-title">{entry.title || item.slug}</h1>
+        {entry.description ? <p class="section-copy">{entry.description}</p> : null}
+      </div>
+      <div class="panel" style="padding:1.5rem;">
+        {entry.assetType === 'image' && previewSrc ? (
+          <img src={previewSrc} alt={entry.alt || entry.title || item.slug} style="width:100%;max-width:960px;display:block;margin:0 auto;border-radius:20px;object-fit:contain;background:#fff;" />
+        ) : null}
+        {entry.assetType === 'file' && entry.file ? (
+          <p><a class="button" href={entry.file} download>Download File</a></p>
+        ) : null}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -3,7 +3,12 @@ import { config, fields, collection, singleton } from '@keystatic/core';
 const imageField = (label, description) =>
   fields.object(
     {
-      src: fields.text({ label: `${label} 路径`, description, defaultValue: '' }),
+      media: fields.relationship({
+        label: `${label} 媒体库引用`,
+        collection: 'mediaLibrary',
+        description: '优先从媒体库选择，便于统一替换和维护',
+      }),
+      src: fields.text({ label: `${label} 备用路径`, description: description || '未关联媒体库时作为备用路径使用', defaultValue: '' }),
       alt: fields.text({ label: `${label} Alt`, defaultValue: '' }),
     },
     { label }
@@ -399,6 +404,11 @@ export default config({
               ],
             }),
             text: fields.text({ label: '段落内容', defaultValue: '', multiline: true }),
+            media: fields.relationship({
+              label: '媒体库图片',
+              collection: 'mediaLibrary',
+              description: '优先从媒体库选择，便于统一替换和维护',
+            }),
             image: uploadedImageField('图片', 'public/uploads/images/news', '/uploads/images/news/'),
             imageAlt: fields.text({ label: '图片 Alt', defaultValue: '' }),
             caption: fields.text({ label: '图片说明', defaultValue: '', multiline: true }),
@@ -424,6 +434,7 @@ export default config({
       slugField: 'slug',
       format: 'json',
       columns: ['title', 'assetType'],
+      previewUrl: '/media-preview/{slug}',
       schema: {
         title: fields.text({ label: '名称', validation: { isRequired: true } }),
         slug: fields.slug({ name: { label: 'Slug' } }),
@@ -438,6 +449,7 @@ export default config({
         image: uploadedImageField('图片资源', 'public/uploads/images/library', '/uploads/images/library/'),
         file: uploadedFileField('文件资源', 'public/uploads/files/library', '/uploads/files/library/'),
         previewImage: uploadedImageField('封面图', 'public/uploads/images/library', '/uploads/images/library/'),
+        alt: fields.text({ label: '默认 Alt', defaultValue: '' }),
         description: fields.text({ label: '描述', defaultValue: '', multiline: true }),
       },
     }),

@@ -3,12 +3,14 @@
   "slug": "jar-candle",
   "summary": "Jar candles combine elegance and functionality, featuring a candle housed in a reusable glass or ceramic jar. They offer a long-lasting, even burnning, making them safe for indoor use. Available in countless scents, colors, and sizes, they effortlessly enhance home décor while filling rooms with a warm, inviting glow. Ideal for living rooms, bathrooms, or as thoughtful gifts, jar candles transform spaces into cozy retreats.",
   "heroImage": {
-    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-    "alt": "Jar Candle"
+    "src": "",
+    "alt": "Jar Candle",
+    "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
   },
   "coverImage": {
-    "src": "/images/source/9bbcab64c8eb_c6302c29f1903336127e8a366ef961.webp",
-    "alt": "Jar Candle"
+    "src": "",
+    "alt": "Jar Candle",
+    "media": "9bbcab64c8eb-c6302c29f1903336127e8a366ef961-556202da"
   },
   "introTitle": "Jar Candle Solution",
   "introBody": "Jar candles combine elegance and functionality, featuring a candle housed in a reusable glass or ceramic jar. They offer a long-lasting, even burnning, making them safe for indoor use. Available in countless scents, colors, and sizes, they effortlessly enhance home décor while filling rooms with a warm, inviting glow. Ideal for living rooms, bathrooms, or as thoughtful gifts, jar candles transform spaces into cozy retreats.",
@@ -25,8 +27,9 @@
     "title": "Jar Candle",
     "description": "Jar candles combine elegance and functionality, featuring a candle housed in a reusable glass or ceramic jar. They offer a long-lasting, even burnning, making them safe for indoor use. Available in countless scents, colors, and sizes, they effortlessly enhance home décor while filling rooms with a warm, inviting glow. Ideal for living rooms, bathrooms, or as thoughtful gifts, jar candles transform spaces into cozy retreats.",
     "image": {
-      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
-      "alt": "Jar Candle"
+      "src": "",
+      "alt": "Jar Candle",
+      "media": "0350d0045597-pexels-vlada-karpovich-6755869-ab2255dc"
     }
   }
 }
