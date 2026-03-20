@@ -1,0 +1,183 @@
+---
+import CategoryGrid from '@/components/sections/CategoryGrid.astro';
+
+interface PageLike {
+  title: string;
+  body?: string;
+  sections?: ReadonlyArray<{
+    eyebrow?: string;
+    title?: string;
+    description?: string;
+    image?: { src?: string; alt?: string } | null;
+    button?: { label?: string; href?: string } | null;
+  }>;
+  highlightsHeading?: { title?: string; description?: string } | null;
+  highlights?: ReadonlyArray<{ title?: string; description?: string; image?: { src?: string; alt?: string } | null }>;
+  factsHeading?: { title?: string; description?: string } | null;
+  facts?: ReadonlyArray<{ title?: string; description?: string }>;
+  gallerySection?: { title?: string; description?: string } | null;
+  gallery?: ReadonlyArray<{ src?: string; alt?: string }>;
+  faqHeading?: { title?: string; description?: string; image?: { src?: string; alt?: string } | null } | null;
+  faq?: ReadonlyArray<{ question?: string; answer?: string }>;
+  cta?: {
+    eyebrow?: string;
+    title?: string;
+    description?: string;
+    image?: { src?: string; alt?: string } | null;
+    button?: { label?: string; href?: string } | null;
+  } | null;
+  linkedCategorySlugs?: ReadonlyArray<string | null>;
+}
+
+interface Props {
+  page: PageLike;
+  linkedCategories?: ReadonlyArray<{ slug: string; entry: { title: string; summary?: string; coverImage?: { src?: string; alt?: string } | null } }>;
+  showBody?: boolean;
+}
+
+const { page, linkedCategories = [], showBody = true } = Astro.props;
+const sections = page.sections?.filter((item) => item.title || item.description || item.image?.src) ?? [];
+const highlights = page.highlights?.filter((item) => item.title || item.description || item.image?.src) ?? [];
+const facts = page.facts?.filter((item) => item.title || item.description) ?? [];
+const gallery = page.gallery?.filter((item) => item.src) ?? [];
+const faq = page.faq?.filter((item) => item.question || item.answer) ?? [];
+const shouldShowBody = showBody && Boolean(page.body?.trim());
+const shouldShowCta = Boolean(page.cta?.title || page.cta?.description || page.cta?.image?.src);
+const bodyParagraphs = (page.body ?? '').split(/\n{2,}/).map((item) => item.trim()).filter(Boolean);
+const sectionParagraphs = sections.map((section) => (section.description ?? '').split(/\n{2,}/).map((item) => item.trim()).filter(Boolean));
+---
+
+{shouldShowBody ? (
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="panel content-prose">
+        {bodyParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </div>
+  </section>
+) : null}
+
+{sections.map((section, index) => (
+  <section class="section" style={index === 0 ? 'padding-top:0;' : undefined}>
+    <div class:list={['container', 'home-story-grid', index % 2 === 1 && 'page-section-reverse']}>
+      <div>
+        {section.eyebrow ? <div class="eyebrow">{section.eyebrow}</div> : null}
+        {section.title ? <h2 class="section-title" style="margin-top:0.5rem;">{section.title}</h2> : null}
+        {section.description ? (
+          <div class="content-prose">
+            {sectionParagraphs[index]?.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+        ) : null}
+        {section.button?.label && section.button?.href ? (
+          <div style="margin-top:1.5rem;">
+            <a class="button secondary" href={section.button.href}>{section.button.label}</a>
+          </div>
+        ) : null}
+      </div>
+      <div class="panel home-story-media">
+        {section.image?.src ? <img src={section.image.src} alt={section.image.alt || section.title || page.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+      </div>
+    </div>
+  </section>
+))}
+
+{facts.length ? (
+  <section class="section" style="background:#fcfaf6;">
+    <div class="container">
+      <div class="section-heading centered">
+        {page.factsHeading?.title ? <h2 class="section-title">{page.factsHeading.title}</h2> : null}
+        {page.factsHeading?.description ? <p class="section-copy">{page.factsHeading.description}</p> : null}
+      </div>
+      <div class="fact-grid">
+        {facts.map((item) => (
+          <article class="panel fact-card">
+            {item.title ? <h3>{item.title}</h3> : null}
+            {item.description ? <p class="section-copy">{item.description}</p> : null}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+) : null}
+
+{highlights.length ? (
+  <section class="section">
+    <div class="container">
+      <div class="section-heading centered">
+        {page.highlightsHeading?.title ? <h2 class="section-title">{page.highlightsHeading.title}</h2> : null}
+        {page.highlightsHeading?.description ? <p class="section-copy">{page.highlightsHeading.description}</p> : null}
+      </div>
+      <div class="custom-option-grid">
+        {highlights.map((item) => (
+          <article class="panel custom-option-card">
+            {item.image?.src ? <img src={item.image.src} alt={item.image.alt || item.title || page.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+            {item.title ? <h3>{item.title}</h3> : null}
+            {item.description ? <p class="section-copy">{item.description}</p> : null}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+) : null}
+
+{linkedCategories.length ? <CategoryGrid title="Related Categories" items={linkedCategories} /> : null}
+
+{gallery.length ? (
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        {page.gallerySection?.title ? <h2 class="section-title">{page.gallerySection.title}</h2> : null}
+        {page.gallerySection?.description ? <p class="section-copy">{page.gallerySection.description}</p> : null}
+      </div>
+      <div class="page-gallery-grid">
+        {gallery.map((image) => <img src={image.src} alt={image.alt || page.title} />)}
+      </div>
+    </div>
+  </section>
+) : null}
+
+{faq.length ? (
+  <section class="section" style="background:#fcfaf6;">
+    <div class="container faq-shell">
+      <div class="panel faq-media">
+        {page.faqHeading?.image?.src ? <img src={page.faqHeading.image.src} alt={page.faqHeading.image.alt || page.title} style="aspect-ratio:4/5;object-fit:cover;" /> : null}
+      </div>
+      <div>
+        <div class="section-heading" style="margin-bottom:1.5rem;">
+          {page.faqHeading?.title ? <h2 class="section-title">{page.faqHeading.title}</h2> : null}
+          {page.faqHeading?.description ? <p class="section-copy">{page.faqHeading.description}</p> : null}
+        </div>
+        <div class="faq-list">
+          {faq.map((item) => (
+            <article class="panel faq-item">
+              {item.question ? <h3>{item.question}</h3> : null}
+              {item.answer ? <p class="section-copy">{item.answer}</p> : null}
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+) : null}
+
+{shouldShowCta ? (
+  <section class="section">
+    <div class="container">
+      <div class="panel page-cta-shell">
+        <div>
+          {page.cta?.eyebrow ? <div class="eyebrow">{page.cta.eyebrow}</div> : null}
+          {page.cta?.title ? <h2 class="section-title" style="margin-top:0.5rem;">{page.cta.title}</h2> : null}
+          {page.cta?.description ? <p class="section-copy">{page.cta.description}</p> : null}
+          {page.cta?.button?.label && page.cta?.button?.href ? (
+            <div style="margin-top:1.5rem;">
+              <a class="button" href={page.cta.button.href}>{page.cta.button.label}</a>
+            </div>
+          ) : null}
+        </div>
+        <div class="page-cta-media">
+          {page.cta?.image?.src ? <img src={page.cta.image.src} alt={page.cta.image.alt || page.cta.title || page.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+        </div>
+      </div>
+    </div>
+  </section>
+) : null}

@@ -1,0 +1,62 @@
+{
+  "title": "Theme Not Found_404",
+  "slug": "privacy-policy",
+  "summary": "",
+  "heroImage": {
+    "src": "",
+    "alt": "Theme Not Found_404"
+  },
+  "heroText": "",
+  "body": "",
+  "sections": [],
+  "highlightsHeading": {
+    "title": "",
+    "description": ""
+  },
+  "highlights": [],
+  "factsHeading": {
+    "title": "",
+    "description": ""
+  },
+  "facts": [],
+  "gallerySection": {
+    "title": "",
+    "description": ""
+  },
+  "gallery": [],
+  "linkedCategorySlugs": [],
+  "faqHeading": {
+    "title": "",
+    "description": "",
+    "image": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  "faq": [],
+  "cta": {
+    "eyebrow": "",
+    "title": "",
+    "description": "",
+    "image": {
+      "src": "",
+      "alt": "Theme Not Found_404"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "inquiry": {
+    "title": "",
+    "description": ""
+  },
+  "seo": {
+    "title": "Theme Not Found_404",
+    "description": "",
+    "image": {
+      "src": "",
+      "alt": "Theme Not Found_404"
+    }
+  }
+}

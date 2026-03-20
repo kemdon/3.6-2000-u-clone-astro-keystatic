@@ -1,0 +1,31 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  image?: { src?: string; alt?: string } | null;
+  primaryLabel?: string;
+  primaryHref?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+}
+
+const { eyebrow, title, description, image, primaryLabel, primaryHref, secondaryLabel, secondaryHref } = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero-shell">
+    <div class="hero-copy">
+      {eyebrow ? <div class="eyebrow">{eyebrow}</div> : null}
+      <h1>{title}</h1>
+      {description ? <p>{description}</p> : null}
+      <div class="hero-actions">
+        {primaryLabel && primaryHref ? <a class="button" href={primaryHref}>{primaryLabel}</a> : null}
+        {secondaryLabel && secondaryHref ? <a class="button secondary" href={secondaryHref}>{secondaryLabel}</a> : null}
+      </div>
+    </div>
+    <div class="hero-media">
+      {image?.src ? <img src={image.src} alt={image.alt || title} /> : null}
+    </div>
+  </div>
+</section>

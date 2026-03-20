@@ -1,0 +1,113 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import CategoryGrid from '@/components/sections/CategoryGrid.astro';
+import ProductGrid from '@/components/sections/ProductGrid.astro';
+import NewsGrid from '@/components/sections/NewsGrid.astro';
+import InquiryPanel from '@/components/sections/InquiryPanel.astro';
+import { getCategories, getHome, getNews, getProducts } from '@/lib/content';
+
+const [home, categories, products, news] = await Promise.all([getHome(), getCategories(), getProducts(), getNews()]);
+const featuredCategories = categories.filter((item) => home.featuredCategorySlugs.includes(item.slug));
+const featuredProducts = products.filter((item) => home.featuredProductSlugs.includes(item.slug));
+const featuredNews = news.filter((item) => home.featuredNewsSlugs.includes(item.slug));
+const companyParagraphs = (home.company?.description ?? '').split(/\n{2,}/).filter(Boolean);
+const customizationParagraphs = (home.customization?.description ?? '').split(/\n{2,}/).filter(Boolean);
+---
+
+<BaseLayout title={home.seo.title || home.hero.title} description={home.seo.description || home.hero.description} image={home.seo.image?.src}>
+  <HeroSection
+    eyebrow={home.hero.eyebrow}
+    title={home.hero.title}
+    description={home.hero.description}
+    image={home.hero.background}
+    primaryLabel={home.hero.primaryLabel}
+    primaryHref={home.hero.primaryHref}
+    secondaryLabel={home.hero.secondaryLabel}
+    secondaryHref={home.hero.secondaryHref}
+  />
+
+  <CategoryGrid title="Product Categories" items={featuredCategories} />
+
+  <section class="section" style="background:rgba(255,255,255,0.35);">
+    <div class="container home-story-grid">
+      <div>
+        <div class="eyebrow">{home.company.eyebrow}</div>
+        <h2 class="section-title" style="margin-top:0.5rem;">{home.company.title}</h2>
+        <div class="content-prose">
+          {companyParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div style="margin-top:1.5rem;">
+          <a class="button secondary" href={home.company.buttonHref}>{home.company.buttonLabel}</a>
+        </div>
+      </div>
+      <div class="panel home-story-media">
+        {home.company.image?.src ? <img src={home.company.image.src} alt={home.company.image.alt || home.company.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+      </div>
+    </div>
+  </section>
+
+  <ProductGrid title="Hot Products" items={featuredProducts} />
+
+  <section class="section" style="background:#fcfaf6;">
+    <div class="container">
+      <div class="section-heading centered">
+        <div class="eyebrow">Explore Custom Solution</div>
+        <h2 class="section-title">Flexible supply support for global candle buyers</h2>
+        <p class="section-copy">Explore our custom and wholesale solutions designed to fit OEM projects, private label launches, and stable repeat orders.</p>
+      </div>
+      <div class="home-solution-grid">
+        {home.solutions.map((item) => (
+          <article class="panel home-solution-card">
+            {item.image?.src ? <img class="solution-icon" src={item.image.src} alt={item.image.alt || item.title} /> : null}
+            <h3>{item.title}</h3>
+            <p class="section-copy">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:rgba(198,110,75,0.08);">
+    <div class="container home-story-grid">
+      <div class="panel home-story-media">
+        {home.customization.image?.src ? <img src={home.customization.image.src} alt={home.customization.image.alt || home.customization.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+      </div>
+      <div>
+        <div class="eyebrow">Customized Service</div>
+        <h2 class="section-title" style="margin-top:0.5rem;">{home.customization.title}</h2>
+        <div class="content-prose">
+          {customizationParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div style="margin-top:1.5rem;">
+          <a class="button" href={home.customization.buttonHref}>{home.customization.buttonLabel}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fcfaf6;">
+    <div class="container">
+      <div class="section-heading centered">
+        <div class="eyebrow">Customizable Options</div>
+        <h2 class="section-title">Customizable Options for Your Brand</h2>
+        <p class="section-copy">We offer flexible customization options across materials, structures, colors, and branding to meet different market requirements.</p>
+      </div>
+      <div class="custom-option-grid">
+        {home.customOptions.map((item) => (
+          <article class="panel custom-option-card">
+            {item.image?.src ? <img src={item.image.src} alt={item.image.alt || item.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+            <h3>{item.title}</h3>
+            <p class="section-copy">{item.description}</p>
+            <div style="margin-top:1rem;">
+              <a class="button secondary" href={item.buttonHref}>{item.buttonLabel}</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <NewsGrid title="Latest News" items={featuredNews} />
+  <InquiryPanel title={home.inquiry.title} description={home.inquiry.description} buttonLabel={home.inquiry.buttonLabel} buttonHref={home.inquiry.buttonHref} />
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  image?: { src?: string; alt?: string } | null;
+  items?: string[];
+  ctaLabel?: string;
+  ctaHref?: string;
+}
+
+const { eyebrow, title, description, image, items = [], ctaLabel, ctaHref } = Astro.props;
+---
+
+<section class="section">
+  <div class="container editorial-shell">
+    <div class="editorial-copy">
+      {eyebrow ? <div class="eyebrow">{eyebrow}</div> : null}
+      <h2 class="section-title">{title}</h2>
+      {description ? <p class="section-copy">{description}</p> : null}
+      {items.length ? (
+        <ul class="editorial-list">
+          {items.map((item) => <li>{item}</li>)}
+        </ul>
+      ) : null}
+      {ctaLabel && ctaHref ? <a class="button" href={ctaHref}>{ctaLabel}</a> : null}
+    </div>
+    <div class="editorial-media panel">
+      {image?.src ? <img src={image.src} alt={image.alt || title} /> : null}
+    </div>
+  </div>
+</section>

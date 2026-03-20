@@ -1,0 +1,30 @@
+{
+  "siteName": "Sunwing Technology",
+  "companyName": "Qingdao Sunwing Technology Service Co., Ltd.",
+  "siteUrl": "https://www.birthdaycakecandle.com",
+  "logo": {
+    "src": "/images/source/33373eb67955_logo-2-!p.webp",
+    "alt": "Sunwing Technology"
+  },
+  "favicon": "/images/source/fb45513fed76_logo-2.ico",
+  "email": "customize@birthdaycakecandle.com",
+  "phone": "+86 18053291849",
+  "whatsapp": "+86 18053291849",
+  "address": "Pingdu City, Qingdao City, China",
+  "downloadLabel": "Download",
+  "floatingContact": {
+    "enabled": true,
+    "title": "Contact Us",
+    "email": "customize@birthdaycakecandle.com",
+    "whatsapp": "+86 18053291849"
+  },
+  "copyright": "© 2026 Qingdao Sunwing Technology Service Co., Ltd.",
+  "defaultSeo": {
+    "title": "Professional custom candle manufacturer",
+    "description": "We specialize in OEM and private label candle production, offering flexible customization, stable quality, and reliable supply to support brands and wholesalers worldwide.",
+    "image": {
+      "src": "/images/source/bbbeb6c53084_pexels-ekaterina-bolovtsova-63.webp",
+      "alt": "Professional custom candle manufacturer"
+    }
+  }
+}

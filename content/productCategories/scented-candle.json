@@ -1,0 +1,32 @@
+{
+  "title": "Scented Candle",
+  "slug": "scented-candle",
+  "summary": "Indulge in moments of calm with our soy wax scented candles. Infused with natural fragrances like lavender or vanilla, they transform any space into a sanctuary of relaxation. Clean-burning and eco-friendly, these candles are perfect for self-care or gifting.",
+  "heroImage": {
+    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+    "alt": "Scented Candle"
+  },
+  "coverImage": {
+    "src": "/images/source/54e07acd1d13_2928e16a4a6a4c9ebe9855e4b6fcf3.webp",
+    "alt": "Scented Candle"
+  },
+  "introTitle": "Scented Candle Solution",
+  "introBody": "Indulge in moments of calm with our soy wax scented candles. Infused with natural fragrances like lavender or vanilla, they transform any space into a sanctuary of relaxation. Clean-burning and eco-friendly, these candles are perfect for self-care or gifting.",
+  "primaryCta": {
+    "label": "Send Inquiry",
+    "href": "/contact"
+  },
+  "secondaryCta": {
+    "label": "Learn Our Customization",
+    "href": "/products"
+  },
+  "sortOrder": 8,
+  "seo": {
+    "title": "Scented Candle",
+    "description": "Indulge in moments of calm with our soy wax scented candles. Infused with natural fragrances like lavender or vanilla, they transform any space into a sanctuary of relaxation. Clean-burning and eco-friendly, these candles are perfect for self-care or gifting.",
+    "image": {
+      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+      "alt": "Scented Candle"
+    }
+  }
+}

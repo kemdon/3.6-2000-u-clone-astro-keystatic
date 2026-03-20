@@ -1,0 +1,26 @@
+---
+import { getNavigation, getSite } from '@/lib/content';
+
+const [site, navigation] = await Promise.all([getSite(), getNavigation()]);
+---
+
+<header class="site-header">
+  <div class="container inner">
+    <a class="brand" href="/">
+      {site.logo?.src ? <img src={site.logo.src} alt={site.logo.alt || site.siteName} /> : null}
+      <span>{site.siteName}</span>
+    </a>
+    <div class="header-nav-shell">
+      <nav class="nav" aria-label="主导航">
+        {navigation.headerLinks.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+        {site.downloadFile ? (
+          <a href={site.downloadFile} download class="nav-download">
+            {site.downloadLabel || 'Download'}
+          </a>
+        ) : null}
+      </nav>
+    </div>
+  </div>
+</header>

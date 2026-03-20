@@ -1,0 +1,76 @@
+{
+  "title": "Contact",
+  "slug": "contact",
+  "summary": "If you have any inquiries or questions, please simply fill out this contact form.",
+  "heroImage": {
+    "src": "/images/source/40494f75b899_unsplash_78a265wpio4-1-2546-!j.webp",
+    "alt": "Contact"
+  },
+  "heroText": "If you have any inquiries or questions, please simply fill out this contact form.",
+  "body": "",
+  "sections": [
+    {
+      "eyebrow": "CONTACT US NOW",
+      "title": "Provide one-stop solutions for Candles",
+      "description": "Qingdao Sunwing Technology Service Co., Ltd.\n\nOffice Address: Pingdu City,Qingdao city,China\n\nEMAILS: customize@birthdaycakecandle.com\n\nPHONES: +86 18053291849",
+      "image": {
+        "src": "",
+        "alt": "Contact"
+      },
+      "button": {
+        "label": "Email Us",
+        "href": "/contact"
+      }
+    }
+  ],
+  "highlightsHeading": {
+    "title": "",
+    "description": ""
+  },
+  "highlights": [],
+  "factsHeading": {
+    "title": "",
+    "description": ""
+  },
+  "facts": [],
+  "gallerySection": {
+    "title": "",
+    "description": ""
+  },
+  "gallery": [],
+  "linkedCategorySlugs": [],
+  "faqHeading": {
+    "title": "",
+    "description": "",
+    "image": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  "faq": [],
+  "cta": {
+    "eyebrow": "Inquiry Form",
+    "title": "Tell Us Your Requirements",
+    "description": "Leave your requirements, company information, and candle needs to start the discussion.",
+    "image": {
+      "src": "",
+      "alt": "Contact form"
+    },
+    "button": {
+      "label": "Start Inquiry",
+      "href": "/contact"
+    }
+  },
+  "inquiry": {
+    "title": "",
+    "description": ""
+  },
+  "seo": {
+    "title": "Contact",
+    "description": "If you have any inquiries or questions, please simply fill out this contact form.",
+    "image": {
+      "src": "/images/source/40494f75b899_unsplash_78a265wpio4-1-2546-!j.webp",
+      "alt": "Contact"
+    }
+  }
+}

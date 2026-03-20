@@ -1,0 +1,36 @@
+---
+interface Stat {
+  label: string;
+  value: string;
+  note?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  stats: Stat[];
+}
+
+const { title, description, stats } = Astro.props;
+---
+
+<section class="section" style="padding-top:1rem;">
+  <div class="container">
+    <div class="panel capability-shell">
+      <div>
+        <div class="eyebrow">Capability</div>
+        <h2 class="section-title" style="margin-bottom:0.75rem;">{title}</h2>
+        {description ? <p class="section-copy" style="max-width:56ch;">{description}</p> : null}
+      </div>
+      <div class="capability-grid">
+        {stats.map((stat) => (
+          <div class="capability-item">
+            <strong>{stat.value}</strong>
+            <span>{stat.label}</span>
+            {stat.note ? <small>{stat.note}</small> : null}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

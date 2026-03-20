@@ -1,0 +1,38 @@
+---
+interface Item {
+  slug: string;
+  entry: {
+    title: string;
+    publishedAt?: string;
+    summary?: string;
+    coverImage?: { src?: string; alt?: string } | null;
+  };
+}
+
+interface Props {
+  title: string;
+  items: Item[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{title}</h2>
+    <div class="grid list-grid">
+      {items.map((item) => (
+        <article class="card">
+          {item.entry.coverImage?.src ? (
+            <img src={item.entry.coverImage.src} alt={item.entry.coverImage.alt || item.entry.title} style="aspect-ratio:4/3;object-fit:cover;" />
+          ) : null}
+          <div style="padding:1.25rem;">
+            <div class="meta">{item.entry.publishedAt}</div>
+            <h3 style="margin:.4rem 0 0.7rem;"><a href={`/news/${item.slug}`}>{item.entry.title}</a></h3>
+            <p class="section-copy">{item.entry.summary}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+{
+  "headerLinks": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Customization",
+      "href": "/customization"
+    },
+    {
+      "label": "News",
+      "href": "/news"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footerLinks": [
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Customization",
+      "href": "/customization"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
+}

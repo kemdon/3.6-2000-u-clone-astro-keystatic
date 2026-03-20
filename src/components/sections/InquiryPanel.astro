@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  buttonLabel: string;
+  buttonHref: string;
+}
+
+const { title, description, buttonLabel, buttonHref } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <div class="panel" style="display:grid;gap:1rem;grid-template-columns:1.4fr .6fr;align-items:center;">
+      <div>
+        <div class="eyebrow">Inquiry</div>
+        <h2 class="section-title" style="margin-bottom:0.75rem;">{title}</h2>
+        <p class="section-copy">{description}</p>
+      </div>
+      <div style="display:flex;justify-content:flex-end;">
+        <a class="button" href={buttonHref}>{buttonLabel}</a>
+      </div>
+    </div>
+  </div>
+</section>

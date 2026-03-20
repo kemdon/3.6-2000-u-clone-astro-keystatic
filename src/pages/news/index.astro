@@ -1,0 +1,28 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import InquiryPanel from '@/components/sections/InquiryPanel.astro';
+import NewsGrid from '@/components/sections/NewsGrid.astro';
+import { getNews, getNewsPage } from '@/lib/content';
+
+const [news, page] = await Promise.all([getNews(), getNewsPage()]);
+---
+
+<BaseLayout title={page.seo.title || page.title} description={page.seo.description || page.summary} image={page.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">News</div>
+      <h1 class="section-title">{page.title}</h1>
+      {page.summary ? <p class="section-copy">{page.summary}</p> : null}
+      {page.heroImage?.src ? <img src={page.heroImage.src} alt={page.heroImage.alt || page.title} class="panel" style="margin-top:1.5rem;aspect-ratio:16/7;object-fit:cover;" /> : null}
+    </div>
+  </section>
+  <NewsGrid title="All News" items={news} />
+  {page.inquiry?.title ? (
+    <InquiryPanel
+      title={page.inquiry.title}
+      description={page.inquiry.description}
+      buttonLabel={page.inquiry.buttonLabel}
+      buttonHref={page.inquiry.buttonHref}
+    />
+  ) : null}
+</BaseLayout>

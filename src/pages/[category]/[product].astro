@@ -1,0 +1,148 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProductGrid from '@/components/sections/ProductGrid.astro';
+import { getCategories, getProductRecordBySlug, getProducts, getSite, textToParagraphs } from '@/lib/content';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const products = await getProducts();
+  return products.map((item) => ({ params: { category: item.entry.category, product: item.slug } }));
+}
+
+const categorySlug = Astro.params.category;
+const productSlug = Astro.params.product;
+const product = categorySlug && productSlug ? await getProductRecordBySlug(categorySlug, productSlug) : null;
+
+if (!product) {
+  throw new Error(`Product not found: ${categorySlug ?? 'unknown'}/${productSlug ?? 'unknown'}`);
+}
+
+const [allProducts, categories, site] = await Promise.all([getProducts(), getCategories(), getSite()]);
+const siblingProducts = allProducts.filter((item) => item.entry.category === product.entry.category && item.slug !== product.slug).slice(0, 4);
+const categoryList = categories.map((item) => ({
+  slug: item.slug,
+  title: item.entry.title,
+  active: item.slug === product.entry.category,
+}));
+const bodyParagraphs = textToParagraphs(product.entry.body);
+const currentCategory = categories.find((item) => item.slug === product.entry.category);
+---
+
+<BaseLayout title={product.entry.seo.title || product.entry.title} description={product.entry.seo.description || product.entry.summary} image={product.entry.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Home</a><span>/</span><a href="/products">Products</a><span>/</span>
+        <a href={`/${product.entry.category}`}>{currentCategory?.entry.title || product.entry.category}</a><span>/</span><span>{product.entry.title}</span>
+      </div>
+      <div class="product-detail-shell" style="margin-top:1rem;">
+        <div class="product-main">
+          <div class="panel">
+            {product.entry.coverImage?.src ? <img src={product.entry.coverImage.src} alt={product.entry.coverImage.alt || product.entry.title} style="aspect-ratio:4/3;object-fit:cover;border-radius:20px;" /> : null}
+            {product.entry.gallery?.length ? (
+              <div class="grid" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:1rem;">
+                {product.entry.gallery.slice(0, 6).map((image) => <img src={image.src} alt={image.alt || product.entry.title} style="aspect-ratio:1/1;object-fit:cover;border-radius:16px;" />)}
+              </div>
+            ) : null}
+          </div>
+          <div class="panel">
+            <div class="eyebrow">{currentCategory?.entry.title || product.entry.category}</div>
+            <h1 class="section-title" style="margin-top:0.5rem;">{product.entry.title}</h1>
+            <p class="section-copy">{product.entry.summary}</p>
+            {product.entry.highlights?.length ? (
+              <>
+                <h2 style="margin-top:2rem;">Key Highlights</h2>
+                <ul class="section-copy product-highlight-list">
+                  {product.entry.highlights.map((item) => <li>{item}</li>)}
+                </ul>
+              </>
+            ) : null}
+          </div>
+          {product.entry.specs?.length ? (
+            <div class="panel">
+              <div class="eyebrow">Specifications</div>
+              <h2 style="margin:0.4rem 0 1rem;">Product Data</h2>
+              <dl class="spec-grid">
+                {product.entry.specs.map((spec) => (
+                  <>
+                    <dt>{spec.label}</dt>
+                    <dd>{spec.value}</dd>
+                  </>
+                ))}
+              </dl>
+            </div>
+          ) : null}
+          {bodyParagraphs.length ? (
+            <div class="panel">
+              <div class="eyebrow">Descriptions</div>
+              <div class="content-prose">
+                {bodyParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+            </div>
+          ) : null}
+          <div class="panel inquiry-card">
+            <div class="eyebrow">Inquiry</div>
+            <h2 style="margin:0.4rem 0 0.75rem;">Request A Free Quote</h2>
+            <p class="section-copy">Tell us your target market, expected quantity, packaging request, or OEM requirement. We will follow up with a quotation plan and production suggestion.</p>
+            <form class="inquiry-form" action={`mailto:${site.email || 'customize@birthdaycakecandle.com'}`} method="post" enctype="text/plain">
+              <input type="hidden" name="Product" value={product.entry.title} />
+              <div class="inquiry-form-grid">
+                <input class="inquiry-input" type="text" name="Name" placeholder="Your Name" />
+                <input class="inquiry-input" type="email" name="Email" placeholder="Email Address" />
+                <input class="inquiry-input" type="text" name="Company" placeholder="Company Name" />
+                <input class="inquiry-input" type="text" name="WhatsApp" placeholder="Phone / WhatsApp" />
+              </div>
+              <textarea class="inquiry-input" name="Message" rows="5" placeholder={`I'm interested in ${product.entry.title}. Please share MOQ, price, lead time, and customization options.`}></textarea>
+              <div class="inquiry-actions">
+                <button class="button" type="submit">Send Inquiry</button>
+                <a class="button secondary" href="/contact">Contact Page</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <aside class="product-sidebar">
+          <div class="panel sidebar-block">
+            <div class="eyebrow">Products</div>
+            <h2 class="sidebar-title">Category List</h2>
+            <nav class="sidebar-nav">
+              {categoryList.map((item) => (
+                <a class:list={['sidebar-link', item.active && 'active']} href={`/${item.slug}`}>{item.title}</a>
+              ))}
+            </nav>
+          </div>
+          <div class="panel sidebar-block">
+            <div class="eyebrow">Commercial Use</div>
+            <h2 class="sidebar-title">Ready for wholesale and OEM inquiry</h2>
+            <div class="tag-list" style="margin-top:1rem;">
+              <span class="tag">Category: {currentCategory?.entry.title || product.entry.category}</span>
+              <span class="tag">Gallery: {product.entry.gallery?.length ?? 0} images</span>
+              <span class="tag">MOQ & packaging on request</span>
+            </div>
+            <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+              <a class="button" href="/contact">Request Quote</a>
+              <a class="button secondary" href={`/${product.entry.category}`}>Back To Category</a>
+            </div>
+          </div>
+          {siblingProducts.length ? (
+            <div class="panel sidebar-block">
+              <div class="eyebrow">Related Products</div>
+              <div class="sidebar-media-list">
+                {siblingProducts.map((item) => (
+                  <a class="sidebar-media" href={`/${item.entry.category}/${item.slug}`}>
+                    {item.entry.coverImage?.src ? <img src={item.entry.coverImage.src} alt={item.entry.coverImage.alt || item.entry.title} /> : null}
+                    <div>
+                      <strong>{item.entry.title}</strong>
+                      <span>View Product</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ) : null}
+        </aside>
+      </div>
+    </div>
+  </section>
+  {siblingProducts.length ? <ProductGrid title="Related Products" items={siblingProducts} /> : null}
+</BaseLayout>

@@ -1,0 +1,563 @@
+{
+  "goal": "Reconstruct frontend pages from cloned local assets and page snapshots.",
+  "start_url": "https://www.birthdaycakecandle.com/",
+  "generated_at": "2026-03-09T00:32:52.768016",
+  "output_root": "clone",
+  "global_files": {
+    "sitemap": "sitemap.json",
+    "resources_manifest": "resources_manifest.json",
+    "reconstruction_index": "reconstruction_index.json"
+  },
+  "resource_summary": {
+    "download_stats": {
+      "success": 97,
+      "failed": 3,
+      "too_large": 0,
+      "timeout": 0,
+      "ignored": 1
+    },
+    "total_local_resources": 97,
+    "total_url_mappings": 97
+  },
+  "pages": [
+    {
+      "url": "https://www.birthdaycakecandle.com/",
+      "title": "Professional custom candle manufacturer - Sunwing Technology",
+      "directory": "001_home_85fc8c29",
+      "resources_downloaded": 33,
+      "files": {
+        "metadata": "pages/001_home_85fc8c29/metadata.json",
+        "links": "pages/001_home_85fc8c29/links.json",
+        "dom_source": "pages/001_home_85fc8c29/dom_source.html",
+        "rewritten_html": "pages/001_home_85fc8c29/index.html",
+        "resources": "pages/001_home_85fc8c29/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/about-us",
+      "title": "About Us - Sunwing Technology",
+      "directory": "002_about-us_c6df1518",
+      "resources_downloaded": 19,
+      "files": {
+        "metadata": "pages/002_about-us_c6df1518/metadata.json",
+        "links": "pages/002_about-us_c6df1518/links.json",
+        "dom_source": "pages/002_about-us_c6df1518/dom_source.html",
+        "rewritten_html": "pages/002_about-us_c6df1518/index.html",
+        "resources": "pages/002_about-us_c6df1518/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/beeswax-candle",
+      "title": "Beeswax Candle - Sunwing Technology",
+      "directory": "003_beeswax-candle_93e57652",
+      "resources_downloaded": 22,
+      "files": {
+        "metadata": "pages/003_beeswax-candle_93e57652/metadata.json",
+        "links": "pages/003_beeswax-candle_93e57652/links.json",
+        "dom_source": "pages/003_beeswax-candle_93e57652/dom_source.html",
+        "rewritten_html": "pages/003_beeswax-candle_93e57652/index.html",
+        "resources": "pages/003_beeswax-candle_93e57652/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle",
+      "title": "Birthday Candle - Sunwing Technology",
+      "directory": "004_birthday-candle_4d93c2de",
+      "resources_downloaded": 32,
+      "files": {
+        "metadata": "pages/004_birthday-candle_4d93c2de/metadata.json",
+        "links": "pages/004_birthday-candle_4d93c2de/links.json",
+        "dom_source": "pages/004_birthday-candle_4d93c2de/dom_source.html",
+        "rewritten_html": "pages/004_birthday-candle_4d93c2de/index.html",
+        "resources": "pages/004_birthday-candle_4d93c2de/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/birthday-party-smile-design-candle-company",
+      "title": "Birthday party smile design candle company - Sunwing Technology",
+      "directory": "005_birthday-candle_birthday-party_3a084d43",
+      "resources_downloaded": 13,
+      "files": {
+        "metadata": "pages/005_birthday-candle_birthday-party_3a084d43/metadata.json",
+        "links": "pages/005_birthday-candle_birthday-party_3a084d43/links.json",
+        "dom_source": "pages/005_birthday-candle_birthday-party_3a084d43/dom_source.html",
+        "rewritten_html": "pages/005_birthday-candle_birthday-party_3a084d43/index.html",
+        "resources": "pages/005_birthday-candle_birthday-party_3a084d43/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/curved-wave-shape-cake-candle-factory",
+      "title": "curved wave shape cake candle factory - Sunwing Technology",
+      "directory": "006_birthday-candle_curved-wave-sh_1dd2b233",
+      "resources_downloaded": 13,
+      "files": {
+        "metadata": "pages/006_birthday-candle_curved-wave-sh_1dd2b233/metadata.json",
+        "links": "pages/006_birthday-candle_curved-wave-sh_1dd2b233/links.json",
+        "dom_source": "pages/006_birthday-candle_curved-wave-sh_1dd2b233/dom_source.html",
+        "rewritten_html": "pages/006_birthday-candle_curved-wave-sh_1dd2b233/index.html",
+        "resources": "pages/006_birthday-candle_curved-wave-sh_1dd2b233/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/digit-birthday-cake-candles-company",
+      "title": "digit birthday cake candles company - Sunwing Technology",
+      "directory": "007_birthday-candle_digit-birthday_3c1f5762",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/007_birthday-candle_digit-birthday_3c1f5762/metadata.json",
+        "links": "pages/007_birthday-candle_digit-birthday_3c1f5762/links.json",
+        "dom_source": "pages/007_birthday-candle_digit-birthday_3c1f5762/dom_source.html",
+        "rewritten_html": "pages/007_birthday-candle_digit-birthday_3c1f5762/index.html",
+        "resources": "pages/007_birthday-candle_digit-birthday_3c1f5762/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/long-thin-birthday-candles",
+      "title": "long thin birthday candles - Sunwing Technology",
+      "directory": "008_birthday-candle_long-thin-birt_09ed28b0",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/008_birthday-candle_long-thin-birt_09ed28b0/metadata.json",
+        "links": "pages/008_birthday-candle_long-thin-birt_09ed28b0/links.json",
+        "dom_source": "pages/008_birthday-candle_long-thin-birt_09ed28b0/dom_source.html",
+        "rewritten_html": "pages/008_birthday-candle_long-thin-birt_09ed28b0/index.html",
+        "resources": "pages/008_birthday-candle_long-thin-birt_09ed28b0/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/multicolored-spiral-birthday-candle-for-party",
+      "title": "multicolored spiral birthday candle for party - Sunwing Technology",
+      "directory": "009_birthday-candle_multicolored-s_4c78b0f3",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/009_birthday-candle_multicolored-s_4c78b0f3/metadata.json",
+        "links": "pages/009_birthday-candle_multicolored-s_4c78b0f3/links.json",
+        "dom_source": "pages/009_birthday-candle_multicolored-s_4c78b0f3/dom_source.html",
+        "rewritten_html": "pages/009_birthday-candle_multicolored-s_4c78b0f3/index.html",
+        "resources": "pages/009_birthday-candle_multicolored-s_4c78b0f3/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/thin-spiral-birthday-cake-candles",
+      "title": "thin spiral birthday cake candles - Sunwing Technology",
+      "directory": "010_birthday-candle_thin-spiral-bi_d7d17c20",
+      "resources_downloaded": 13,
+      "files": {
+        "metadata": "pages/010_birthday-candle_thin-spiral-bi_d7d17c20/metadata.json",
+        "links": "pages/010_birthday-candle_thin-spiral-bi_d7d17c20/links.json",
+        "dom_source": "pages/010_birthday-candle_thin-spiral-bi_d7d17c20/dom_source.html",
+        "rewritten_html": "pages/010_birthday-candle_thin-spiral-bi_d7d17c20/index.html",
+        "resources": "pages/010_birthday-candle_thin-spiral-bi_d7d17c20/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/wholesale-stick-brithday-candles-with",
+      "title": "wholesale stick birthday candles - Sunwing Technology",
+      "directory": "011_birthday-candle_wholesale-stic_10c8ac33",
+      "resources_downloaded": 13,
+      "files": {
+        "metadata": "pages/011_birthday-candle_wholesale-stic_10c8ac33/metadata.json",
+        "links": "pages/011_birthday-candle_wholesale-stic_10c8ac33/links.json",
+        "dom_source": "pages/011_birthday-candle_wholesale-stic_10c8ac33/dom_source.html",
+        "rewritten_html": "pages/011_birthday-candle_wholesale-stic_10c8ac33/index.html",
+        "resources": "pages/011_birthday-candle_wholesale-stic_10c8ac33/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/bright-candle",
+      "title": "Bright Candle - Sunwing Technology",
+      "directory": "012_bright-candle_4a09e75d",
+      "resources_downloaded": 20,
+      "files": {
+        "metadata": "pages/012_bright-candle_4a09e75d/metadata.json",
+        "links": "pages/012_bright-candle_4a09e75d/links.json",
+        "dom_source": "pages/012_bright-candle_4a09e75d/dom_source.html",
+        "rewritten_html": "pages/012_bright-candle_4a09e75d/index.html",
+        "resources": "pages/012_bright-candle_4a09e75d/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/contact",
+      "title": "Contact - Sunwing Technology",
+      "directory": "013_contact_37ab3691",
+      "resources_downloaded": 9,
+      "files": {
+        "metadata": "pages/013_contact_37ab3691/metadata.json",
+        "links": "pages/013_contact_37ab3691/links.json",
+        "dom_source": "pages/013_contact_37ab3691/dom_source.html",
+        "rewritten_html": "pages/013_contact_37ab3691/index.html",
+        "resources": "pages/013_contact_37ab3691/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/customization",
+      "title": "Customization - Sunwing Technology",
+      "directory": "014_customization_6ad24f0f",
+      "resources_downloaded": 28,
+      "files": {
+        "metadata": "pages/014_customization_6ad24f0f/metadata.json",
+        "links": "pages/014_customization_6ad24f0f/links.json",
+        "dom_source": "pages/014_customization_6ad24f0f/dom_source.html",
+        "rewritten_html": "pages/014_customization_6ad24f0f/index.html",
+        "resources": "pages/014_customization_6ad24f0f/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/dinner-candle",
+      "title": "Dinner Candle - Sunwing Technology",
+      "directory": "015_dinner-candle_ff6a5194",
+      "resources_downloaded": 21,
+      "files": {
+        "metadata": "pages/015_dinner-candle_ff6a5194/metadata.json",
+        "links": "pages/015_dinner-candle_ff6a5194/links.json",
+        "dom_source": "pages/015_dinner-candle_ff6a5194/dom_source.html",
+        "rewritten_html": "pages/015_dinner-candle_ff6a5194/index.html",
+        "resources": "pages/015_dinner-candle_ff6a5194/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/jar-candle",
+      "title": "Jar Candle - Sunwing Technology",
+      "directory": "016_jar-candle_6f8b82ee",
+      "resources_downloaded": 20,
+      "files": {
+        "metadata": "pages/016_jar-candle_6f8b82ee/metadata.json",
+        "links": "pages/016_jar-candle_6f8b82ee/links.json",
+        "dom_source": "pages/016_jar-candle_6f8b82ee/dom_source.html",
+        "rewritten_html": "pages/016_jar-candle_6f8b82ee/index.html",
+        "resources": "pages/016_jar-candle_6f8b82ee/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/news",
+      "title": "Our News - Sunwing Technology",
+      "directory": "017_news_4af731c1",
+      "resources_downloaded": 12,
+      "files": {
+        "metadata": "pages/017_news_4af731c1/metadata.json",
+        "links": "pages/017_news_4af731c1/links.json",
+        "dom_source": "pages/017_news_4af731c1/dom_source.html",
+        "rewritten_html": "pages/017_news_4af731c1/index.html",
+        "resources": "pages/017_news_4af731c1/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/news/about-business-scope",
+      "title": "Business Scope - Sunwing Technology",
+      "directory": "018_news_about-business-scope_87308cc8",
+      "resources_downloaded": 11,
+      "files": {
+        "metadata": "pages/018_news_about-business-scope_87308cc8/metadata.json",
+        "links": "pages/018_news_about-business-scope_87308cc8/links.json",
+        "dom_source": "pages/018_news_about-business-scope_87308cc8/dom_source.html",
+        "rewritten_html": "pages/018_news_about-business-scope_87308cc8/index.html",
+        "resources": "pages/018_news_about-business-scope_87308cc8/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/news/candle-customize-service",
+      "title": "Candle Customize Service - Sunwing Technology",
+      "directory": "019_news_candle-customize-service_5883e44c",
+      "resources_downloaded": 11,
+      "files": {
+        "metadata": "pages/019_news_candle-customize-service_5883e44c/metadata.json",
+        "links": "pages/019_news_candle-customize-service_5883e44c/links.json",
+        "dom_source": "pages/019_news_candle-customize-service_5883e44c/dom_source.html",
+        "rewritten_html": "pages/019_news_candle-customize-service_5883e44c/index.html",
+        "resources": "pages/019_news_candle-customize-service_5883e44c/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/news/looking-for-global-partners",
+      "title": "Looking For Global Partners - Sunwing Technology",
+      "directory": "020_news_looking-for-global-partne_1d515719",
+      "resources_downloaded": 11,
+      "files": {
+        "metadata": "pages/020_news_looking-for-global-partne_1d515719/metadata.json",
+        "links": "pages/020_news_looking-for-global-partne_1d515719/links.json",
+        "dom_source": "pages/020_news_looking-for-global-partne_1d515719/dom_source.html",
+        "rewritten_html": "pages/020_news_looking-for-global-partne_1d515719/index.html",
+        "resources": "pages/020_news_looking-for-global-partne_1d515719/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/others",
+      "title": "Others - Sunwing Technology",
+      "directory": "021_others_c809fd19",
+      "resources_downloaded": 21,
+      "files": {
+        "metadata": "pages/021_others_c809fd19/metadata.json",
+        "links": "pages/021_others_c809fd19/links.json",
+        "dom_source": "pages/021_others_c809fd19/dom_source.html",
+        "rewritten_html": "pages/021_others_c809fd19/index.html",
+        "resources": "pages/021_others_c809fd19/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/pillar-candle",
+      "title": "Pillar Candle - Sunwing Technology",
+      "directory": "022_pillar-candle_25bd54fd",
+      "resources_downloaded": 21,
+      "files": {
+        "metadata": "pages/022_pillar-candle_25bd54fd/metadata.json",
+        "links": "pages/022_pillar-candle_25bd54fd/links.json",
+        "dom_source": "pages/022_pillar-candle_25bd54fd/dom_source.html",
+        "rewritten_html": "pages/022_pillar-candle_25bd54fd/index.html",
+        "resources": "pages/022_pillar-candle_25bd54fd/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/privacy-policy",
+      "title": "Theme Not Found_404",
+      "directory": "023_privacy-policy_097ecd1d",
+      "resources_downloaded": 0,
+      "files": {
+        "metadata": "pages/023_privacy-policy_097ecd1d/metadata.json",
+        "links": "pages/023_privacy-policy_097ecd1d/links.json",
+        "dom_source": "pages/023_privacy-policy_097ecd1d/dom_source.html",
+        "rewritten_html": "pages/023_privacy-policy_097ecd1d/index.html",
+        "resources": "pages/023_privacy-policy_097ecd1d/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/products",
+      "title": "Products - Sunwing Technology",
+      "directory": "024_products_20f40695",
+      "resources_downloaded": 37,
+      "files": {
+        "metadata": "pages/024_products_20f40695/metadata.json",
+        "links": "pages/024_products_20f40695/links.json",
+        "dom_source": "pages/024_products_20f40695/dom_source.html",
+        "rewritten_html": "pages/024_products_20f40695/index.html",
+        "resources": "pages/024_products_20f40695/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/scented-candle",
+      "title": "Scented Candle - Sunwing Technology",
+      "directory": "025_scented-candle_774caa0f",
+      "resources_downloaded": 23,
+      "files": {
+        "metadata": "pages/025_scented-candle_774caa0f/metadata.json",
+        "links": "pages/025_scented-candle_774caa0f/links.json",
+        "dom_source": "pages/025_scented-candle_774caa0f/dom_source.html",
+        "rewritten_html": "pages/025_scented-candle_774caa0f/index.html",
+        "resources": "pages/025_scented-candle_774caa0f/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/scented-candle/natural-wax-scented-candles-customized",
+      "title": "natural wax scented candles customized - Sunwing Technology",
+      "directory": "026_scented-candle_natural-wax-sce_6fea6ceb",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/026_scented-candle_natural-wax-sce_6fea6ceb/metadata.json",
+        "links": "pages/026_scented-candle_natural-wax-sce_6fea6ceb/links.json",
+        "dom_source": "pages/026_scented-candle_natural-wax-sce_6fea6ceb/dom_source.html",
+        "rewritten_html": "pages/026_scented-candle_natural-wax-sce_6fea6ceb/index.html",
+        "resources": "pages/026_scented-candle_natural-wax-sce_6fea6ceb/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/tealight-candle",
+      "title": "Tealight Candle - Sunwing Technology",
+      "directory": "027_tealight-candle_7e704c93",
+      "resources_downloaded": 20,
+      "files": {
+        "metadata": "pages/027_tealight-candle_7e704c93/metadata.json",
+        "links": "pages/027_tealight-candle_7e704c93/links.json",
+        "dom_source": "pages/027_tealight-candle_7e704c93/dom_source.html",
+        "rewritten_html": "pages/027_tealight-candle_7e704c93/index.html",
+        "resources": "pages/027_tealight-candle_7e704c93/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/beeswax-candle/natural-rolled-beeswax-pillar-candles-wholesale",
+      "title": "Natural rolled beeswax pillar candles wholesale - Sunwing Technology",
+      "directory": "028_beeswax-candle_natural-rolled-_e0e45f6b",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/028_beeswax-candle_natural-rolled-_e0e45f6b/metadata.json",
+        "links": "pages/028_beeswax-candle_natural-rolled-_e0e45f6b/links.json",
+        "dom_source": "pages/028_beeswax-candle_natural-rolled-_e0e45f6b/dom_source.html",
+        "rewritten_html": "pages/028_beeswax-candle_natural-rolled-_e0e45f6b/index.html",
+        "resources": "pages/028_beeswax-candle_natural-rolled-_e0e45f6b/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/beeswax-candle/rolled-beeswax-candles-factory",
+      "title": "rolled beeswax candles factory - Sunwing Technology",
+      "directory": "029_beeswax-candle_rolled-beeswax-_70c7f281",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/029_beeswax-candle_rolled-beeswax-_70c7f281/metadata.json",
+        "links": "pages/029_beeswax-candle_rolled-beeswax-_70c7f281/links.json",
+        "dom_source": "pages/029_beeswax-candle_rolled-beeswax-_70c7f281/dom_source.html",
+        "rewritten_html": "pages/029_beeswax-candle_rolled-beeswax-_70c7f281/index.html",
+        "resources": "pages/029_beeswax-candle_rolled-beeswax-_70c7f281/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/candle-shape-design-birthday-party-candle-company",
+      "title": "Candle Shape Design Birthday Party Candle Company - Sunwing Technology",
+      "directory": "030_birthday-candle_candle-shape-d_8abaee65",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/030_birthday-candle_candle-shape-d_8abaee65/metadata.json",
+        "links": "pages/030_birthday-candle_candle-shape-d_8abaee65/links.json",
+        "dom_source": "pages/030_birthday-candle_candle-shape-d_8abaee65/dom_source.html",
+        "rewritten_html": "pages/030_birthday-candle_candle-shape-d_8abaee65/index.html",
+        "resources": "pages/030_birthday-candle_candle-shape-d_8abaee65/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/colorful-twisted-birthday-candles",
+      "title": "colorful twisted birthday candles - Sunwing Technology",
+      "directory": "031_birthday-candle_colorful-twist_3834e0b8",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/031_birthday-candle_colorful-twist_3834e0b8/metadata.json",
+        "links": "pages/031_birthday-candle_colorful-twist_3834e0b8/links.json",
+        "dom_source": "pages/031_birthday-candle_colorful-twist_3834e0b8/dom_source.html",
+        "rewritten_html": "pages/031_birthday-candle_colorful-twist_3834e0b8/index.html",
+        "resources": "pages/031_birthday-candle_colorful-twist_3834e0b8/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/custom-cherry-shape-design-party-candles",
+      "title": "Custom Cherry Shape Design Party Candles - Sunwing Technology",
+      "directory": "032_birthday-candle_custom-cherry-_f238bb41",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/032_birthday-candle_custom-cherry-_f238bb41/metadata.json",
+        "links": "pages/032_birthday-candle_custom-cherry-_f238bb41/links.json",
+        "dom_source": "pages/032_birthday-candle_custom-cherry-_f238bb41/dom_source.html",
+        "rewritten_html": "pages/032_birthday-candle_custom-cherry-_f238bb41/index.html",
+        "resources": "pages/032_birthday-candle_custom-cherry-_f238bb41/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/custom-pentagram-party-candle-wholesale",
+      "title": "Custom Pentagram Party Candle Wholesale - Sunwing Technology",
+      "directory": "033_birthday-candle_custom-pentagr_22517f7b",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/033_birthday-candle_custom-pentagr_22517f7b/metadata.json",
+        "links": "pages/033_birthday-candle_custom-pentagr_22517f7b/links.json",
+        "dom_source": "pages/033_birthday-candle_custom-pentagr_22517f7b/dom_source.html",
+        "rewritten_html": "pages/033_birthday-candle_custom-pentagr_22517f7b/index.html",
+        "resources": "pages/033_birthday-candle_custom-pentagr_22517f7b/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/customize-large-number-birthday-candles-wholesale",
+      "title": "Customize Large Number Birthday Candles Wholesale - Sunwing Technology",
+      "directory": "034_birthday-candle_customize-larg_869fa71c",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/034_birthday-candle_customize-larg_869fa71c/metadata.json",
+        "links": "pages/034_birthday-candle_customize-larg_869fa71c/links.json",
+        "dom_source": "pages/034_birthday-candle_customize-larg_869fa71c/dom_source.html",
+        "rewritten_html": "pages/034_birthday-candle_customize-larg_869fa71c/index.html",
+        "resources": "pages/034_birthday-candle_customize-larg_869fa71c/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/cute-heart-and-star-shaped-birthday-candles-wholesale",
+      "title": "Cute Heart and Star Shaped Birthday Candles Wholesale - Sunwing Technology",
+      "directory": "035_birthday-candle_cute-heart-and_dacf1ac9",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/035_birthday-candle_cute-heart-and_dacf1ac9/metadata.json",
+        "links": "pages/035_birthday-candle_cute-heart-and_dacf1ac9/links.json",
+        "dom_source": "pages/035_birthday-candle_cute-heart-and_dacf1ac9/dom_source.html",
+        "rewritten_html": "pages/035_birthday-candle_cute-heart-and_dacf1ac9/index.html",
+        "resources": "pages/035_birthday-candle_cute-heart-and_dacf1ac9/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/happy-birthday-candles-with-print",
+      "title": "happy birthday candles with print - Sunwing Technology",
+      "directory": "036_birthday-candle_happy-birthday_76000760",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/036_birthday-candle_happy-birthday_76000760/metadata.json",
+        "links": "pages/036_birthday-candle_happy-birthday_76000760/links.json",
+        "dom_source": "pages/036_birthday-candle_happy-birthday_76000760/dom_source.html",
+        "rewritten_html": "pages/036_birthday-candle_happy-birthday_76000760/index.html",
+        "resources": "pages/036_birthday-candle_happy-birthday_76000760/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/happy-birthday-letter-party-candles-wholesale",
+      "title": "Happy Birthday Letter Party Candles wholesale - Sunwing Technology",
+      "directory": "037_birthday-candle_happy-birthday_d9978a3e",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/037_birthday-candle_happy-birthday_d9978a3e/metadata.json",
+        "links": "pages/037_birthday-candle_happy-birthday_d9978a3e/links.json",
+        "dom_source": "pages/037_birthday-candle_happy-birthday_d9978a3e/dom_source.html",
+        "rewritten_html": "pages/037_birthday-candle_happy-birthday_d9978a3e/index.html",
+        "resources": "pages/037_birthday-candle_happy-birthday_d9978a3e/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/birthday-candle/wholesale-cute-bear-shape-party-candles-company",
+      "title": "wholesale cute bear shape party candles company - Sunwing Technology",
+      "directory": "038_birthday-candle_wholesale-cute_7fd5d232",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/038_birthday-candle_wholesale-cute_7fd5d232/metadata.json",
+        "links": "pages/038_birthday-candle_wholesale-cute_7fd5d232/links.json",
+        "dom_source": "pages/038_birthday-candle_wholesale-cute_7fd5d232/dom_source.html",
+        "rewritten_html": "pages/038_birthday-candle_wholesale-cute_7fd5d232/index.html",
+        "resources": "pages/038_birthday-candle_wholesale-cute_7fd5d232/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/dinner-candle/scented-taper-dinner-candles-supply",
+      "title": "Scented taper dinner candles supply - Sunwing Technology",
+      "directory": "039_dinner-candle_scented-taper-di_abb47e2d",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/039_dinner-candle_scented-taper-di_abb47e2d/metadata.json",
+        "links": "pages/039_dinner-candle_scented-taper-di_abb47e2d/links.json",
+        "dom_source": "pages/039_dinner-candle_scented-taper-di_abb47e2d/dom_source.html",
+        "rewritten_html": "pages/039_dinner-candle_scented-taper-di_abb47e2d/index.html",
+        "resources": "pages/039_dinner-candle_scented-taper-di_abb47e2d/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/others/scented-votive-candles-supply",
+      "title": "Scented Votive Candles Supply - Sunwing Technology",
+      "directory": "040_others_scented-votive-candles-_735436dd",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/040_others_scented-votive-candles-_735436dd/metadata.json",
+        "links": "pages/040_others_scented-votive-candles-_735436dd/links.json",
+        "dom_source": "pages/040_others_scented-votive-candles-_735436dd/dom_source.html",
+        "rewritten_html": "pages/040_others_scented-votive-candles-_735436dd/index.html",
+        "resources": "pages/040_others_scented-votive-candles-_735436dd/page_resources.json"
+      }
+    },
+    {
+      "url": "https://www.birthdaycakecandle.com/pillar-candle/wholesale-2-inch-pillar-candles",
+      "title": "wholesale 2 inch pillar candles - Sunwing Technology",
+      "directory": "041_pillar-candle_wholesale-2-inch_5f286743",
+      "resources_downloaded": 14,
+      "files": {
+        "metadata": "pages/041_pillar-candle_wholesale-2-inch_5f286743/metadata.json",
+        "links": "pages/041_pillar-candle_wholesale-2-inch_5f286743/links.json",
+        "dom_source": "pages/041_pillar-candle_wholesale-2-inch_5f286743/dom_source.html",
+        "rewritten_html": "pages/041_pillar-candle_wholesale-2-inch_5f286743/index.html",
+        "resources": "pages/041_pillar-candle_wholesale-2-inch_5f286743/page_resources.json"
+      }
+    }
+  ],
+  "instructions_for_llm": [
+    "Use pages[*].files.rewritten_html as primary layout reference.",
+    "Use pages[*].files.dom_source and dom_after_interactions to recover dynamic/hidden content.",
+    "Resolve local file provenance through resources_manifest.local_to_urls.",
+    "Prioritize unresolved_urls from page_resources.json when assets appear missing."
+  ]
+}

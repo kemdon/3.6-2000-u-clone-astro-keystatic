@@ -1,0 +1,147 @@
+{
+  "title": "About Us",
+  "slug": "about-us",
+  "summary": "Our core guiding principles include exquisite craftsmanship, high-quality materials, and sustainable practices that are friendly to the environment.",
+  "heroImage": {
+    "src": "/images/source/31c992c8eab4_banner-inner-1-!j.webp",
+    "alt": "About Us"
+  },
+  "heroText": "Our core guiding principles include exquisite craftsmanship, high-quality materials, and sustainable practices that are friendly to the environment.",
+  "body": "Qingdao Sunwing Technology Service Co., Ltd. is a professional candle supply company based in Qingdao City,China.with a focus on candle production industries,which covers happy birthday candles,scented candles,dinner candles, tealight candles and bright candles,etc.\n\nWe provide flexible candle customize service for our customers to Integrate into the market as soon as possible,Our commitment to reliability, competitive pricing, and transparent partnership makes us the ideal choice for businesses seeking to optimize their global supply chain.\n\nPlease don't hesitate to contact us if you have any questions.",
+  "sections": [
+    {
+      "eyebrow": "About Us",
+      "title": "Qingdao Sunwing  Technology Service Co., Ltd.",
+      "description": "Qingdao Sunwing Technology Service Co., Ltd. is a professional candle supply company based in Qingdao City,China.with a focus on candle production industries,which covers happy birthday candles,scented candles,dinner candles, tealight candles and bright candles,etc.\n\nWe provide flexible candle customize service for our customers to Integrate into the market as soon as possible,Our commitment to reliability, competitive pricing, and transparent partnership makes us the ideal choice for businesses seeking to optimize their global supply chain.\n\nPlease don't hesitate to contact us if you have any questions.",
+      "image": {
+        "src": "/images/source/50e2b47b8e37_08cdef3e519673ff0c411180784ae0.webp",
+        "alt": "About Us"
+      },
+      "button": {
+        "label": "",
+        "href": ""
+      }
+    }
+  ],
+  "highlightsHeading": {
+    "title": "",
+    "description": ""
+  },
+  "highlights": [],
+  "factsHeading": {
+    "title": "Business Philosophy And Vision",
+    "description": ""
+  },
+  "facts": [
+    {
+      "title": "Business Philosophy:",
+      "description": "People-oriented, Pioneering and innovative, Scientific management, and Common prosperity."
+    },
+    {
+      "title": "Mission & Core Value:",
+      "description": "Our Mission is \"Create green products and serve a better life\". Our Core Value is \" Upright, Open, Responsible, Pragmatic\"."
+    },
+    {
+      "title": "Corporate Vision:",
+      "description": "Focus on the development of global artisanal candles, and strive to become a sustainable and competitive industry leader."
+    },
+    {
+      "title": "our goals:",
+      "description": "Deeply engage in the global candle industry and strive to build a leading candle enterprise."
+    }
+  ],
+  "gallerySection": {
+    "title": "Our Factory",
+    "description": "covers an area of over 70,000 square meters, with more than 200 workers and four production workshops. We have four automated filling production lines and an advanced testing center to ensure high-quality and timely delivery of orders. We look forward to sincere cooperation with you."
+  },
+  "gallery": [
+    {
+      "src": "/images/source/ac5936936457_baf28d7cd5831151a1db7b670c5639.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/b3a00549f50f_33a79516e5a9b603fe51c199b71437.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/9395662a28cc_7447f54546f2ea633e79be6e43818c.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/143ab6b2467b_c960bc435d4ba7a2a49e75ffacd3af.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/1fb3695946e8_3fe8cb63af4632f6e357c75b13ad3a.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/175501f23580_7a385a3126767de2bf72599180d77a.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/de0525143540_a6cf238a478f37694ff5f00c756279.webp",
+      "alt": "factory"
+    },
+    {
+      "src": "/images/source/b2c50b185614_880a7323dc92aac6eeb0ce8e8e685d.webp",
+      "alt": "factory"
+    }
+  ],
+  "linkedCategorySlugs": [],
+  "faqHeading": {
+    "title": "FAQ",
+    "description": "",
+    "image": {
+      "src": "/images/source/0d73fb872757_pexels-max-laurell-1958001-106.webp",
+      "alt": "faq"
+    }
+  },
+  "faq": [
+    {
+      "question": "How do I place an order?",
+      "answer": "Select products online → Submit RFQ Assigned account manager contacts you."
+    },
+    {
+      "question": "What payment methods are accepted?",
+      "answer": "T/T Bank Transfer"
+    },
+    {
+      "question": "What is the typical lead time?",
+      "answer": "Standard orders: 15-25 business days (product-dependent)."
+    },
+    {
+      "question": "Who handles customs and duties?",
+      "answer": "Prices are FOB based; import duties & taxes are the buyer's responsibility ,Full documentation support provided (packing list, commercial invoice, COO)"
+    },
+    {
+      "question": "How is quality guaranteed?",
+      "answer": "A complete and independent quality inspection and control system covers the procurement, production, and packaging departments,Third-party inspection acceptable"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Candles Crafted with Precision and Style",
+    "title": "Didn't find the candle type or fragrance you need?",
+    "description": "Get in Touch With Us Today",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "inquiry": {
+    "title": "Request A Free Quote",
+    "description": "Any questions please do not hesitate to contact us. We are happy to provide flexible and reliable solutions."
+  },
+  "seo": {
+    "title": "About Us",
+    "description": "Our core guiding principles include exquisite craftsmanship, high-quality materials, and sustainable practices that are friendly to the environment.",
+    "image": {
+      "src": "/images/source/31c992c8eab4_banner-inner-1-!j.webp",
+      "alt": "About Us"
+    }
+  }
+}

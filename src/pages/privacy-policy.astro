@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StructuredPageBlocks from '@/components/sections/StructuredPageBlocks.astro';
+import { getCategoriesBySlugs, getPageBySlug, textToParagraphs } from '@/lib/content';
+
+const page = await getPageBySlug('privacy-policy');
+if (!page) throw new Error('Missing page content: privacy-policy');
+const linkedCategories = await getCategoriesBySlugs(page.linkedCategorySlugs ?? []);
+---
+
+<BaseLayout title={page.seo.title || page.title} description={page.seo.description || page.summary} image={page.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Policy</div>
+      <h1 class="section-title">{page.title}</h1>
+      {page.heroText ? <p class="section-copy" style="max-width:72ch;">{page.heroText}</p> : null}
+      <div class="panel content-prose">
+        {textToParagraphs(page.body || page.summary).map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </div>
+  </section>
+  <StructuredPageBlocks page={page} linkedCategories={linkedCategories} showBody={false} />
+</BaseLayout>

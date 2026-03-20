@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CategoryGrid from '@/components/sections/CategoryGrid.astro';
+import InquiryPanel from '@/components/sections/InquiryPanel.astro';
+import { getCategories, getProductsPage } from '@/lib/content';
+
+const [categories, page] = await Promise.all([getCategories(), getProductsPage()]);
+---
+
+<BaseLayout title={page.seo.title || page.title} description={page.seo.description || page.summary} image={page.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Catalog</div>
+      <h1 class="section-title">{page.title}</h1>
+      {page.summary ? <p class="section-copy">{page.summary}</p> : null}
+      {page.heroImage?.src ? <img src={page.heroImage.src} alt={page.heroImage.alt || page.title} class="panel" style="margin-top:1.5rem;aspect-ratio:16/7;object-fit:cover;" /> : null}
+    </div>
+  </section>
+  <CategoryGrid title="All Categories" items={categories} />
+  {page.customOptions?.length ? (
+    <section class="section" style="background:#fcfaf6;">
+      <div class="container">
+        <div class="section-heading centered">
+          {page.customOptionsHeading?.title ? <h2 class="section-title">{page.customOptionsHeading.title}</h2> : null}
+          {page.customOptionsHeading?.description ? <p class="section-copy">{page.customOptionsHeading.description}</p> : null}
+        </div>
+        <div class="custom-option-grid">
+          {page.customOptions.map((item) => (
+            <article class="panel custom-option-card">
+              {item.image?.src ? <img src={item.image.src} alt={item.image.alt || item.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
+              <h3>{item.title}</h3>
+              <p class="section-copy">{item.description}</p>
+              {item.buttonLabel && item.buttonHref ? <a class="button secondary" href={item.buttonHref}>{item.buttonLabel}</a> : null}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  ) : null}
+  {page.inquiry?.title ? (
+    <InquiryPanel
+      title={page.inquiry.title}
+      description={page.inquiry.description}
+      buttonLabel={page.inquiry.buttonLabel}
+      buttonHref={page.inquiry.buttonHref}
+    />
+  ) : null}
+</BaseLayout>

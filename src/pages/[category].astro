@@ -1,0 +1,89 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProductGrid from '@/components/sections/ProductGrid.astro';
+import EditorialSplit from '@/components/sections/EditorialSplit.astro';
+import { getCategories, getCategoryRecordBySlug, getProductsByCategory } from '@/lib/content';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const categories = await getCategories();
+  return categories.map((item) => ({ params: { category: item.slug } }));
+}
+
+const categorySlug = Astro.params.category;
+const category = categorySlug ? await getCategoryRecordBySlug(categorySlug) : null;
+
+if (!category) {
+  throw new Error(`Category not found: ${categorySlug ?? 'unknown'}`);
+}
+
+const products = await getProductsByCategory(category.slug);
+const siblingCategories = (await getCategories()).filter((item) => item.slug !== category.slug).slice(0, 3);
+---
+
+<BaseLayout title={category.entry.seo.title || category.entry.title} description={category.entry.seo.description || category.entry.summary} image={category.entry.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/products">Products</a><span>/</span><span>{category.entry.title}</span></div>
+      <h1 class="section-title" style="margin-top:1rem;">{category.entry.title}</h1>
+      <p class="section-copy">{category.entry.summary}</p>
+      {category.entry.heroImage?.src ? <img src={category.entry.heroImage.src} alt={category.entry.heroImage.alt || category.entry.title} class="panel" style="margin-top:1.5rem;aspect-ratio:16/6;object-fit:cover;" /> : null}
+      <div class="tag-list" style="margin-top:1rem;">
+        <span class="tag">{products.length} products</span>
+        <span class="tag">Keystatic collection: productCategories</span>
+        <span class="tag">Route preserved from clone</span>
+      </div>
+    </div>
+  </section>
+  <EditorialSplit
+    eyebrow="Category Focus"
+    title={category.entry.introTitle || `${category.entry.title} Solution`}
+    description={category.entry.introBody || category.entry.summary || 'This category page is rendered from structured Keystatic content and groups product detail pages under the original public slug.'}
+    image={category.entry.coverImage}
+    items={[
+      'The category hero, summary, and SEO fields are editable without touching template code.',
+      'Each product detail under this category inherits the same public-facing URL structure as the source clone.',
+      'This template can be extended later with specs, manufacturing steps, MOQ, or packaging blocks.',
+    ]}
+    ctaLabel={category.entry.primaryCta?.label || 'Contact For Quote'}
+    ctaHref={category.entry.primaryCta?.href || '/contact'}
+  />
+  {category.entry.secondaryCta?.label && category.entry.secondaryCta?.href ? (
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="panel" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;">
+          <p class="section-copy" style="margin:0;">Need customization support for this candle category? Continue to the main product center or start an inquiry.</p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a class="button" href={category.entry.primaryCta?.href || '/contact'}>{category.entry.primaryCta?.label || 'Send Inquiry'}</a>
+            <a class="button secondary" href={category.entry.secondaryCta.href}>{category.entry.secondaryCta.label}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  ) : null}
+  <ProductGrid title={`${category.entry.title} Products`} items={products} />
+  {siblingCategories.length ? (
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title">Related Categories</h2>
+        <div class="feature-mosaic">
+          <article class="card lead" style="padding:1.5rem;">
+            <div class="eyebrow">Current</div>
+            <h3 style="margin:0.5rem 0 0.75rem;">{category.entry.title}</h3>
+            <p class="section-copy">{category.entry.summary}</p>
+          </article>
+          <div class="stack">
+            {siblingCategories.map((item) => (
+              <article class="card" style="padding:1.25rem;">
+                <div class="eyebrow">Category</div>
+                <h3 style="margin:0.4rem 0;"><a href={`/${item.slug}`}>{item.entry.title}</a></h3>
+                <p class="section-copy">{item.entry.summary}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  ) : null}
+</BaseLayout>

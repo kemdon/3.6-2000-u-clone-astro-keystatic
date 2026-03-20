@@ -1,0 +1,38 @@
+{
+  "name": "sunwing-astro-keystatic",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "build:stable": "npx -y node@22 node_modules/astro/astro.js build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "import:clone": "tsx scripts/import-clone.ts",
+    "sync:assets": "tsx scripts/sync-assets.ts",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:full": "npm run import:clone && npm run check -- --minimumFailingSeverity warning && npm run build:stable && npm run test:e2e"
+  },
+  "dependencies": {
+    "@astrojs/node": "^9.4.4",
+    "@astrojs/react": "^5.0.1",
+    "@keystatic/astro": "^5.0.6",
+    "@keystatic/core": "^0.5.48",
+    "astro": "^5.18.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Business Scope",
+  "slug": "about-business-scope",
+  "publishedAt": "2026-03-09",
+  "summary": "Qingdao Sunwing Technology Service Co., Ltd. mainly produce birthday candles,scented candles,dinner candles,tealight candles,bright household candles,etc,the wax could be paraffin wax,natural soy wax,beeswax,we afford flexible candles customized services,please contact us freely for further cooperation.",
+  "coverImage": {
+    "src": "/images/source/cc78e460329d_candle-scope-!j.webp",
+    "alt": "Business Scope"
+  },
+  "body": "Qingdao Sunwing Technology Service Co., Ltd. mainly produce birthday candles,scented candles,dinner candles,tealight candles,bright household candles,etc,the wax could be paraffin wax,natural soy wax,beeswax,we afford flexible candles customized services,please contact us freely for further cooperation.",
+  "contentBlocks": [],
+  "relatedNewsSlugs": [
+    "looking-for-global-partners",
+    "candle-customize-service"
+  ],
+  "inquiry": {
+    "title": "Request A Free Quote",
+    "description": "Any questions please don't hesitate to contact us,we are very happy to provide a variety of flexible and reliable solutions to help you.",
+    "buttonLabel": "Contact Us",
+    "buttonHref": "/contact"
+  },
+  "seo": {
+    "title": "Business Scope",
+    "description": "Qingdao Sunwing Technology Service Co., Ltd. mainly produce birthday candles,scented candles,dinner candles,tealight candles,bright household candles,etc,the wax could be paraffin wax,natural soy wax,beeswax,we afford flexible candles customized services,please contact us freely for further cooperation.",
+    "image": {
+      "src": "/images/source/cc78e460329d_candle-scope-!j.webp",
+      "alt": "Business Scope"
+    }
+  }
+}

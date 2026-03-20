@@ -1,0 +1,22 @@
+{
+  "title": "Our News",
+  "heroImage": {
+    "src": "/images/source/a8ffe8b8f911_pexels-leeloothefirst-5264677-.webp",
+    "alt": "Our News"
+  },
+  "summary": "",
+  "inquiry": {
+    "title": "Request A Free Quote",
+    "description": "Any questions please don't hesitate to contact us,we are very happy to provide a variety of flexible and reliable solutions to help you.",
+    "buttonLabel": "Contact Us",
+    "buttonHref": "/contact"
+  },
+  "seo": {
+    "title": "Our News",
+    "description": "",
+    "image": {
+      "src": "/images/source/a8ffe8b8f911_pexels-leeloothefirst-5264677-.webp",
+      "alt": "Our News"
+    }
+  }
+}

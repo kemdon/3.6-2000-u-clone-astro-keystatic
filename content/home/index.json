@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "eyebrow": "Custom Candle Manufacturer",
+    "title": "Custom Candle Manufacturing for Global Brands",
+    "description": "We specialize in OEM and private label candle production, offering flexible customization, stable quality, and reliable supply to support brands and wholesalers worldwide.",
+    "background": {
+      "src": "/images/source/bbbeb6c53084_pexels-ekaterina-bolovtsova-63.webp",
+      "alt": "Professional custom candle manufacturer"
+    },
+    "primaryLabel": "View Products",
+    "primaryHref": "/products",
+    "secondaryLabel": "Understand our customized services",
+    "secondaryHref": "/customization"
+  },
+  "intro": {
+    "title": "Professional candle production for wholesale, OEM, and private label demand",
+    "description": "Sunwing Technology focuses on birthday candles, scented candles, dinner candles, tealight candles, and related custom candle programs for international brands, importers, and wholesalers."
+  },
+  "company": {
+    "eyebrow": "about us",
+    "title": "Qingdao Sunwing\n Technology Service Co., Ltd.",
+    "description": "Sunwing Technology mainly produce a wide range of candles, including birthday candles, scented candles, dinner candles, and tealight candles, suitable for retail, events, and promotional markets. With strong manufacturing capabilities, we offer comprehensive custom candle services covering wax materials, colors, fragrance types, sizes, burn time, and packaging solutions.\n\nWhether for private label brands, wholesalers, or promotional projects, we support flexible OEM/ODM production to help customers develop candles that meet specific market requirements and brand positioning",
+    "image": {
+      "src": "/images/source/50e2b47b8e37_08cdef3e519673ff0c411180784ae0.webp",
+      "alt": "About Us"
+    },
+    "buttonLabel": "Explore Us",
+    "buttonHref": "/products"
+  },
+  "solutions": [
+    {
+      "title": "Quick Response",
+      "description": "Fast response to inquiries, samples, and orders.",
+      "image": {
+        "src": "/images/source/1f73ccb4630f_ds-1-!p.webp",
+        "alt": "Quick Response"
+      }
+    },
+    {
+      "title": "Quality Control",
+      "description": "Strict QC from raw materials to finished candles.",
+      "image": {
+        "src": "/images/source/179bff503f84_ds-3-!p.webp",
+        "alt": "Quality Control"
+      }
+    },
+    {
+      "title": "OEM Service",
+      "description": "Professional OEM candle manufacturing for private labels.",
+      "image": {
+        "src": "/images/source/e93f0ed735c3_oem-9934-!p.webp",
+        "alt": "OEM Service"
+      }
+    },
+    {
+      "title": "Customization",
+      "description": "Flexible customization for scent, size, color, and packaging.",
+      "image": {
+        "src": "/images/source/33216f58a551_ds-2-!p.webp",
+        "alt": "Customization"
+      }
+    }
+  ],
+  "customization": {
+    "title": "Customized Service",
+    "description": "We are a reliable candle manufacturer specializing in wholesale and OEM/ODM production. Equipped with advanced testing facilities and an experienced technical team, we produce a wide range of candles that meet international quality and safety standards. With consistent quality, competitive pricing, and market-driven designs, our products are trusted by customers worldwide.\n\nWith stable production capacity and efficient scheduling, we ensure fast lead times without compromising quality. We offer comprehensive OEM/ODM services, including customized fragrances, wax types, colors, sizes, wick options, branding, and packaging solutions—helping brands create candles tailored to their market needs.",
+    "image": {
+      "src": "/images/source/bbbeb6c53084_pexels-ekaterina-bolovtsova-63.webp",
+      "alt": "Customization"
+    },
+    "buttonLabel": "View Customized Services",
+    "buttonHref": "/customization"
+  },
+  "customOptions": [
+    {
+      "title": "Packaging Customization",
+      "description": "We offer packaging box and carton design and production to ensure consistent branding and a professional presentation across your candle products.",
+      "image": {
+        "src": "/images/source/95ca9be4f1b6_packing-!j.webp",
+        "alt": "Packaging Customization"
+      },
+      "buttonLabel": "Contact Us",
+      "buttonHref": "/contact"
+    },
+    {
+      "title": "Custom Wax & Color",
+      "description": "Choose from a wide range of high-quality wax materials, colors, and finishes to create candles that align with your brand image and sustainability goals.",
+      "image": {
+        "src": "/images/source/58d6319023ed_birthday-candle-7286-!j.webp",
+        "alt": "Custom Wax & Color"
+      },
+      "buttonLabel": "Contact Us",
+      "buttonHref": "/contact"
+    },
+    {
+      "title": "Function and Size Customization",
+      "description": "Customize candle size, shape, burn time, and packaging formats to match your application needs, ensuring each product fits your brand positioning and target market.",
+      "image": {
+        "src": "/images/source/ca1a54994e51_christmas-trees-!j.webp",
+        "alt": "Function and Size Customization"
+      },
+      "buttonLabel": "Contact Us",
+      "buttonHref": "/contact"
+    }
+  ],
+  "featuredCategorySlugs": [
+    "beeswax-candle",
+    "birthday-candle",
+    "bright-candle",
+    "dinner-candle",
+    "jar-candle",
+    "others"
+  ],
+  "featuredProductSlugs": [
+    "birthday-party-smile-design-candle-company",
+    "curved-wave-shape-cake-candle-factory",
+    "digit-birthday-cake-candles-company",
+    "long-thin-birthday-candles",
+    "multicolored-spiral-birthday-candle-for-party",
+    "thin-spiral-birthday-cake-candles"
+  ],
+  "featuredNewsSlugs": [
+    "about-business-scope",
+    "candle-customize-service",
+    "looking-for-global-partners"
+  ],
+  "inquiry": {
+    "title": "Need OEM or wholesale candle support?",
+    "description": "Use the contact page to start inquiries, request packaging customization, or align on large-volume product needs.",
+    "buttonLabel": "Contact Sales",
+    "buttonHref": "/contact"
+  },
+  "seo": {
+    "title": "Professional custom candle manufacturer",
+    "description": "We specialize in OEM and private label candle production, offering flexible customization, stable quality, and reliable supply to support brands and wholesalers worldwide.",
+    "image": {
+      "src": "/images/source/bbbeb6c53084_pexels-ekaterina-bolovtsova-63.webp",
+      "alt": "Professional custom candle manufacturer"
+    }
+  }
+}

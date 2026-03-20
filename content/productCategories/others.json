@@ -1,0 +1,32 @@
+{
+  "title": "Others",
+  "slug": "others",
+  "summary": "We offer a wide range of custom candle services to meet the diverse needs of our customers. If you have unique candle requirements, please contact us, and together we together turn your ideas into reality.",
+  "heroImage": {
+    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+    "alt": "Others"
+  },
+  "coverImage": {
+    "src": "/images/source/47aaf7a92542_customize-candles-!j.webp",
+    "alt": "Others"
+  },
+  "introTitle": "",
+  "introBody": "We offer a wide range of custom candle services to meet the diverse needs of our customers. If you have unique candle requirements, please contact us, and together we together turn your ideas into reality.",
+  "primaryCta": {
+    "label": "Send Inquiry",
+    "href": "/contact"
+  },
+  "secondaryCta": {
+    "label": "Learn Our Customization",
+    "href": "/products"
+  },
+  "sortOrder": 6,
+  "seo": {
+    "title": "Others",
+    "description": "We offer a wide range of custom candle services to meet the diverse needs of our customers. If you have unique candle requirements, please contact us, and together we together turn your ideas into reality.",
+    "image": {
+      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+      "alt": "Others"
+    }
+  }
+}

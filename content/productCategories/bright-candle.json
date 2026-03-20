@@ -1,0 +1,32 @@
+{
+  "title": "Bright Candle",
+  "slug": "bright-candle",
+  "summary": "These candles are designed to enhance your living space with gentle, flickering light, creating a warm and inviting atmosphere. Ideal for indoor use, they come in various sizes, scents to complement any décor—whether for a cozy evening, dinner party, or decorative accent. Made from good quality paraffin wax, they offer hours of ambiance without harsh glare. Perfect for bedrooms, bathrooms, or living rooms, they transform ordinary moments into serene experiences.",
+  "heroImage": {
+    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+    "alt": "Bright Candle"
+  },
+  "coverImage": {
+    "src": "/images/source/a3403b15a82f_bright-candle-8900-!j.webp",
+    "alt": "Bright Candle"
+  },
+  "introTitle": "Bright Candle Solution",
+  "introBody": "These candles are designed to enhance your living space with gentle, flickering light, creating a warm and inviting atmosphere. Ideal for indoor use, they come in various sizes, scents to complement any décor—whether for a cozy evening, dinner party, or decorative accent. Made from good quality paraffin wax, they offer hours of ambiance without harsh glare. Perfect for bedrooms, bathrooms, or living rooms, they transform ordinary moments into serene experiences.",
+  "primaryCta": {
+    "label": "Send Inquiry",
+    "href": "/contact"
+  },
+  "secondaryCta": {
+    "label": "Learn Our Customization",
+    "href": "/products"
+  },
+  "sortOrder": 3,
+  "seo": {
+    "title": "Bright Candle",
+    "description": "These candles are designed to enhance your living space with gentle, flickering light, creating a warm and inviting atmosphere. Ideal for indoor use, they come in various sizes, scents to complement any décor—whether for a cozy evening, dinner party, or decorative accent. Made from good quality paraffin wax, they offer hours of ambiance without harsh glare. Perfect for bedrooms, bathrooms, or living rooms, they transform ordinary moments into serene experiences.",
+    "image": {
+      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+      "alt": "Bright Candle"
+    }
+  }
+}

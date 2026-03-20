@@ -1,0 +1,55 @@
+---
+import { getSite } from '@/lib/content';
+
+const site = await getSite();
+const contact = site.floatingContact;
+
+const normalizeWhatsAppHref = (value: string | undefined) => {
+  if (!value) return '';
+  if (value.startsWith('http://') || value.startsWith('https://')) return value;
+  const digits = value.replace(/[^\d]/g, '');
+  return digits ? `https://wa.me/${digits}` : '';
+};
+
+const normalizeLink = (value: string | undefined, protocol: string) => {
+  if (!value) return '';
+  if (value.startsWith('http://') || value.startsWith('https://') || value.startsWith('mailto:')) return value;
+  return `${protocol}${value}`;
+};
+
+const emailHref = normalizeLink(contact?.email, 'mailto:');
+const whatsappHref = normalizeWhatsAppHref(contact?.whatsapp);
+const facebookHref = normalizeLink(contact?.facebook, 'https://');
+const hasItems = Boolean(emailHref || whatsappHref || facebookHref);
+---
+
+{contact?.enabled && hasItems ? (
+  <aside class="floating-contact panel" aria-label="联系组件" data-floating-contact>
+    <button type="button" class="floating-contact-toggle" aria-label="收起联系组件" data-floating-contact-toggle>
+      <span data-floating-contact-toggle-icon class="floating-contact-toggle-icon">
+        ×
+      </span>
+    </button>
+    <strong class="floating-contact-title">{contact.title || 'Contact Us'}</strong>
+    <div class="floating-contact-list">
+      {emailHref ? <a href={emailHref} target="_blank" rel="noreferrer">Email</a> : null}
+      {whatsappHref ? <a href={whatsappHref} target="_blank" rel="noreferrer">WhatsApp</a> : null}
+      {facebookHref ? <a href={facebookHref} target="_blank" rel="noreferrer">Facebook</a> : null}
+    </div>
+  </aside>
+) : null}
+
+<script>
+  const root = document.querySelector('[data-floating-contact]');
+  const toggleButton = document.querySelector('[data-floating-contact-toggle]');
+  const toggleIcon = document.querySelector('[data-floating-contact-toggle-icon]');
+
+  if (root && toggleButton && toggleIcon) {
+    const collapsedIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.28.54 3.48.54a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.5 21 3 13.5 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.18 2.38.54 3.48a1 1 0 0 1-.24 1z" fill="currentColor"/></svg>';
+    toggleButton.addEventListener('click', () => {
+      const collapsed = root.classList.toggle('is-collapsed');
+      toggleButton.setAttribute('aria-label', collapsed ? '展开联系组件' : '收起联系组件');
+      toggleIcon.innerHTML = collapsed ? collapsedIcon : '×';
+    });
+  }
+</script>

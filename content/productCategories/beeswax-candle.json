@@ -1,0 +1,32 @@
+{
+  "title": "Beeswax Candle",
+  "slug": "beeswax-candle",
+  "summary": "Beeswax candles are a natural and eco-friendly choice,Known for their subtly sweet honey aroma, they emit a warm, golden glow that creates a cozy ambiance. they burn cleanly,making them ideal for indoor air quality. Their slow-burning nature ensures long-lasting illumination, perfect for relaxation or decorative purposes. With a rustic charm and sustainable appeal, beeswax candles are a thoughtful addition to any home, blending beauty with environmental responsibility.",
+  "heroImage": {
+    "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+    "alt": "Beeswax Candle"
+  },
+  "coverImage": {
+    "src": "/images/source/79138912537b_beeswax-candles-!j.webp",
+    "alt": "Beeswax Candle"
+  },
+  "introTitle": "Beeswax Candle Solution",
+  "introBody": "Beeswax candles are a natural and eco-friendly choice,Known for their subtly sweet honey aroma, they emit a warm, golden glow that creates a cozy ambiance. they burn cleanly,making them ideal for indoor air quality. Their slow-burning nature ensures long-lasting illumination, perfect for relaxation or decorative purposes. With a rustic charm and sustainable appeal, beeswax candles are a thoughtful addition to any home, blending beauty with environmental responsibility.",
+  "primaryCta": {
+    "label": "Send Inquiry",
+    "href": "/contact"
+  },
+  "secondaryCta": {
+    "label": "Learn Our Customization",
+    "href": "/products"
+  },
+  "sortOrder": 1,
+  "seo": {
+    "title": "Beeswax Candle",
+    "description": "Beeswax candles are a natural and eco-friendly choice,Known for their subtly sweet honey aroma, they emit a warm, golden glow that creates a cozy ambiance. they burn cleanly,making them ideal for indoor air quality. Their slow-burning nature ensures long-lasting illumination, perfect for relaxation or decorative purposes. With a rustic charm and sustainable appeal, beeswax candles are a thoughtful addition to any home, blending beauty with environmental responsibility.",
+    "image": {
+      "src": "/images/source/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+      "alt": "Beeswax Candle"
+    }
+  }
+}

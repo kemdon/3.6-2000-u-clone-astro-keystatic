@@ -1,0 +1,23 @@
+---
+import { getNavigation, getSite } from '@/lib/content';
+
+const [site, navigation] = await Promise.all([getSite(), getNavigation()]);
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="panel inner">
+      <div>
+        <strong>{site.companyName}</strong>
+        <div class="meta">{site.address}</div>
+        <div class="meta">{site.email} {site.phone ? `· ${site.phone}` : ''}</div>
+      </div>
+      <nav class="nav" aria-label="页脚导航">
+        {navigation.footerLinks.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+      </nav>
+    </div>
+    <p class="meta" style="margin-top:1rem;">{site.copyright}</p>
+  </div>
+</footer>

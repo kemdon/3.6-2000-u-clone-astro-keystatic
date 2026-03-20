@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StructuredPageBlocks from '@/components/sections/StructuredPageBlocks.astro';
+import { getCategoriesBySlugs, getPageBySlug } from '@/lib/content';
+
+const page = await getPageBySlug('about-us');
+if (!page) throw new Error('Missing page content: about-us');
+const linkedCategories = await getCategoriesBySlugs(page.linkedCategorySlugs ?? []);
+---
+
+<BaseLayout title={page.seo.title || page.title} description={page.seo.description || page.summary} image={page.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">About</div>
+      <h1 class="section-title">{page.title}</h1>
+      {page.heroText ? <p class="section-copy" style="max-width:72ch;">{page.heroText}</p> : null}
+      {page.heroImage?.src ? <img src={page.heroImage.src} alt={page.heroImage.alt || page.title} class="panel" style="margin:1.5rem 0 2rem;aspect-ratio:16/7;object-fit:cover;" /> : null}
+    </div>
+  </section>
+  <StructuredPageBlocks page={page} linkedCategories={linkedCategories} />
+</BaseLayout>

@@ -1,0 +1,419 @@
+{
+  "url_to_local": {
+    "https://www.birthdaycakecandle.com/shared/css/shared-pc-ltr.min.css?v=471222": "resources/www.birthdaycakecandle.com/e319f1b428bd_shared-pc-ltr.min.css",
+    "https://www.birthdaycakecandle.com/shared/fonts/cmsfont2.woff2?v=471222": "resources/www.birthdaycakecandle.com/4600f289073e_cmsfont2.woff2",
+    "https://www.birthdaycakecandle.com/shared/js/shared.min.js?v=471222": "resources/www.birthdaycakecandle.com/b5c39aa702b0_shared.min.js",
+    "https://www.birthdaycakecandle.com/theme/skin-lz/dist/fonts/Inter-Medium.woff2": "resources/www.birthdaycakecandle.com/da0a47244b3c_Inter-Medium.woff2",
+    "https://www.birthdaycakecandle.com/theme/skin-lz/dist/fonts/Inter-Regular.woff2": "resources/www.birthdaycakecandle.com/124e2ed72580_Inter-Regular.woff2",
+    "https://www.birthdaycakecandle.com/theme/skin-lz/dist/fonts/Inter-SemiBold.woff2": "resources/www.birthdaycakecandle.com/bf9d6f925ee9_Inter-SemiBold.woff2",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-ekaterina-bolovtsova-6311803-!j.webp": "resources/www.birthdaycakecandle.com/bbbeb6c53084_pexels-ekaterina-bolovtsova-63.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-olha-ruskykh-6954597-!j.webp": "resources/www.birthdaycakecandle.com/155fe83213b5_pexels-olha-ruskykh-6954597-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2511/ds-1-!p.webp": "resources/www.birthdaycakecandle.com/1f73ccb4630f_ds-1-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2511/ds-2-!p.webp": "resources/www.birthdaycakecandle.com/33216f58a551_ds-2-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2511/ds-3-!p.webp": "resources/www.birthdaycakecandle.com/179bff503f84_ds-3-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2511/logo-2-!p.webp": "resources/www.birthdaycakecandle.com/33373eb67955_logo-2-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/08cdef3e519673ff0c411180784ae093-6549-!j.webp": "resources/www.birthdaycakecandle.com/50e2b47b8e37_08cdef3e519673ff0c411180784ae0.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/0f5963d9e41cb989bcf60c79315caa72-!j.webp": "resources/www.birthdaycakecandle.com/8320e1e08325_0f5963d9e41cb989bcf60c79315caa.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/1ac914871c9d3f616170583cee91875b-!j.webp": "resources/www.birthdaycakecandle.com/41c198223483_1ac914871c9d3f616170583cee9187.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/2928e16a4a6a4c9ebe9855e4b6fcf3da-!j.webp": "resources/www.birthdaycakecandle.com/54e07acd1d13_2928e16a4a6a4c9ebe9855e4b6fcf3.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/6b7edd48132430ece9b5090b608e1275-!j.webp": "resources/www.birthdaycakecandle.com/0dd9a3831622_6b7edd48132430ece9b5090b608e12.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/7af75548c67b5836e3fc875523b15d91-!j.webp": "resources/www.birthdaycakecandle.com/3002ee63169f_7af75548c67b5836e3fc875523b15d.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/birthday-candle-7286-!j.webp": "resources/www.birthdaycakecandle.com/58d6319023ed_birthday-candle-7286-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/c6302c29f1903336127e8a366ef9616c-!j.webp": "resources/www.birthdaycakecandle.com/9bbcab64c8eb_c6302c29f1903336127e8a366ef961.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/candle-scope-!j.webp": "resources/www.birthdaycakecandle.com/cc78e460329d_candle-scope-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/christmas-trees-!j.webp": "resources/www.birthdaycakecandle.com/ca1a54994e51_christmas-trees-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/curved-wave-shape-cake-candle-!j.webp": "resources/www.birthdaycakecandle.com/b8dfe45f3e9f_curved-wave-shape-cake-candle-.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/dinner-candle-!j.webp": "resources/www.birthdaycakecandle.com/9a2162c472ee_dinner-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/oem-9934-!p.webp": "resources/www.birthdaycakecandle.com/e93f0ed735c3_oem-9934-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/packing-!j.webp": "resources/www.birthdaycakecandle.com/95ca9be4f1b6_packing-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/smile-party-candle-!j.webp": "resources/www.birthdaycakecandle.com/486602fb20af_smile-party-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/thin-spiral-birthday-candle-!j.webp": "resources/www.birthdaycakecandle.com/66745c82182e_thin-spiral-birthday-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/digit-candles-!j.webp": "resources/www.birthdaycakecandle.com/b76556d26828_digit-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/logo-2.ico": "resources/www.birthdaycakecandle.com/fb45513fed76_logo-2.ico",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/long-thin-birthday-candles-!j.webp": "resources/www.birthdaycakecandle.com/72941c29269b_long-thin-birthday-candles-!j..webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/scented-candles-!j.webp": "resources/www.birthdaycakecandle.com/bd04eb5ea713_scented-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/spiral-birthday-candle-!j.webp": "resources/www.birthdaycakecandle.com/73dd6f942098_spiral-birthday-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/banner-inner-1-!j.webp": "resources/www.birthdaycakecandle.com/31c992c8eab4_banner-inner-1-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/33a79516e5a9b603fe51c199b714379c-!j.webp": "resources/www.birthdaycakecandle.com/b3a00549f50f_33a79516e5a9b603fe51c199b71437.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/3fe8cb63af4632f6e357c75b13ad3a77-!j.webp": "resources/www.birthdaycakecandle.com/1fb3695946e8_3fe8cb63af4632f6e357c75b13ad3a.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/7447f54546f2ea633e79be6e43818c63-!j.webp": "resources/www.birthdaycakecandle.com/9395662a28cc_7447f54546f2ea633e79be6e43818c.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/7a385a3126767de2bf72599180d77a5e-!j.webp": "resources/www.birthdaycakecandle.com/175501f23580_7a385a3126767de2bf72599180d77a.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/880a7323dc92aac6eeb0ce8e8e685d1c-!j.webp": "resources/www.birthdaycakecandle.com/b2c50b185614_880a7323dc92aac6eeb0ce8e8e685d.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/a6cf238a478f37694ff5f00c756279fd-!j.webp": "resources/www.birthdaycakecandle.com/de0525143540_a6cf238a478f37694ff5f00c756279.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/baf28d7cd5831151a1db7b670c5639c1-!j.webp": "resources/www.birthdaycakecandle.com/ac5936936457_baf28d7cd5831151a1db7b670c5639.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/c960bc435d4ba7a2a49e75ffacd3aff0-!j.webp": "resources/www.birthdaycakecandle.com/143ab6b2467b_c960bc435d4ba7a2a49e75ffacd3af.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/pexels-max-laurell-1958001-10699340-!j-!j.webp": "resources/www.birthdaycakecandle.com/0d73fb872757_pexels-max-laurell-1958001-106.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-vlada-karpovich-6755869-!j.webp": "resources/www.birthdaycakecandle.com/0350d0045597_pexels-vlada-karpovich-6755869.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/27912fe2306f68eedb5b798c1d90339b-4433-!j.webp": "resources/www.birthdaycakecandle.com/79f81b378336_27912fe2306f68eedb5b798c1d9033.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/39bf371bc8eabc4e806ffdcb46ef93ed-1690-!j.webp": "resources/www.birthdaycakecandle.com/47f9727614c3_39bf371bc8eabc4e806ffdcb46ef93.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/6bcac2c648472e92d5642589832d02c2-!j.webp": "resources/www.birthdaycakecandle.com/3dee5a1c13ef_6bcac2c648472e92d5642589832d02.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/77cd1fa09372cb909af09d0024b5c3ad-3317-!j.webp": "resources/www.birthdaycakecandle.com/0e9785a301f4_77cd1fa09372cb909af09d0024b5c3.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/ba552e9fbc0409d34fce1e505494b66b-9179-!j.webp": "resources/www.birthdaycakecandle.com/a3450b984c78_ba552e9fbc0409d34fce1e505494b6.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/logo-customization-!j.webp": "resources/www.birthdaycakecandle.com/50620cd38f97_logo-customization-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/beeswax-candles-!j.webp": "resources/www.birthdaycakecandle.com/79138912537b_beeswax-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/beeswax-candles-2339-!j.webp": "resources/www.birthdaycakecandle.com/1b141daaa747_beeswax-candles-2339-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/rolled-beeswax-candles-!j.webp": "resources/www.birthdaycakecandle.com/c92142439ec6_rolled-beeswax-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/twisted-birthday-candle-!j.webp": "resources/www.birthdaycakecandle.com/107a7a3c3ee1_twisted-birthday-candle-!j.web.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/happy-birthday-candles-!j.webp": "resources/www.birthdaycakecandle.com/e537da91ce77_happy-birthday-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/cherry-birthday-candles-!j.webp": "resources/www.birthdaycakecandle.com/4e608cd5f61c_cherry-birthday-candles-!j.web.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/cute-bear-party-candles-1362-!j.webp": "resources/www.birthdaycakecandle.com/9e042962869a_cute-bear-party-candles-1362-!.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/happy-birthday-letter-party-candles-wholesale-!j.webp": "resources/www.birthdaycakecandle.com/f14fede02697_happy-birthday-letter-party-ca.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/number-birthday-candles-!j.webp": "resources/www.birthdaycakecandle.com/3b3b813fe043_number-birthday-candles-!j.web.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/pentagram-party-candle-7254-!j.webp": "resources/www.birthdaycakecandle.com/fe776c99e367_pentagram-party-candle-7254-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/star-and-heart-shape-birthday-candles-!j.webp": "resources/www.birthdaycakecandle.com/b33dc6c37875_star-and-heart-shape-birthday-.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/stick-shape-design-birthday-candles-!j.webp": "resources/www.birthdaycakecandle.com/966507b6a8cd_stick-shape-design-birthday-ca.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/smile-party-candle-!j.webp?width=150": "resources/www.birthdaycakecandle.com/eb9031dca3cb_smile-party-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/curved-wave-shape-cake-candle-!j.webp?width=150": "resources/www.birthdaycakecandle.com/e9aa202761cd_curved-wave-shape-cake-candle-.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/digit-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/971d28cdb65b_digit-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/long-thin-birthday-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/edb1f3fea695_long-thin-birthday-candles-!j..webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/spiral-birthday-candle-!j.webp?width=150": "resources/www.birthdaycakecandle.com/2347c5bf6d58_spiral-birthday-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/thin-spiral-birthday-candle-!j.webp?width=150": "resources/www.birthdaycakecandle.com/14746b3712f1_thin-spiral-birthday-candle-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/birthday-candle-7286-!j.webp?width=150": "resources/www.birthdaycakecandle.com/7ba644afc148_birthday-candle-7286-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/bright-candle-8900-!j.webp": "resources/www.birthdaycakecandle.com/a3403b15a82f_bright-candle-8900-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/unsplash_78a265wpio4-1-2546-!j.webp": "resources/www.birthdaycakecandle.com/40494f75b899_unsplash_78a265wpio4-1-2546-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/choose_bottle_1_2_13332273d9-!p.webp": "resources/www.birthdaycakecandle.com/e8ce6b1041a3_choose_bottle_1_2_13332273d9-!.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/choose_drink_1_2_4310d4481e-!p.webp": "resources/www.birthdaycakecandle.com/fb5a204fcce1_choose_drink_1_2_4310d4481e-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/individuation-!p.webp": "resources/www.birthdaycakecandle.com/b399377371fb_individuation-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/individuation1-!p.webp": "resources/www.birthdaycakecandle.com/5e28eebe712b_individuation1-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/individuation2-!p.webp": "resources/www.birthdaycakecandle.com/91cb434cd4ad_individuation2-!p.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/small_labels_6592194f0b-6258-!p.webp": "resources/www.birthdaycakecandle.com/8146641f0501_small_labels_6592194f0b-6258-!.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/dinner-candles-!j.webp": "resources/www.birthdaycakecandle.com/25b420b9b793_dinner-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-leeloothefirst-5264677-!j.webp": "resources/www.birthdaycakecandle.com/a8ffe8b8f911_pexels-leeloothefirst-5264677-.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/customize-candles-!j.webp": "resources/www.birthdaycakecandle.com/47aaf7a92542_customize-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/votive-candles-!j.webp": "resources/www.birthdaycakecandle.com/39b87b4c7ea6_votive-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/pillar-candles-!j.webp": "resources/www.birthdaycakecandle.com/1a3cb8198227_pillar-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/scented-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/6ae023a252a6_scented-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/rolled-beeswax-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/bf694aac5b32_rolled-beeswax-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/beeswax-candles-2339-!j.webp?width=150": "resources/www.birthdaycakecandle.com/3ffecfd3db4a_beeswax-candles-2339-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/stick-shape-design-birthday-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/ba7fe2fd167c_stick-shape-design-birthday-ca.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/twisted-birthday-candle-!j.webp?width=150": "resources/www.birthdaycakecandle.com/aafc21410164_twisted-birthday-candle-!j.web.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/cherry-birthday-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/5129623da69f_cherry-birthday-candles-!j.web.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/pentagram-party-candle-7254-!j.webp?width=150": "resources/www.birthdaycakecandle.com/88bb05eba721_pentagram-party-candle-7254-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/number-birthday-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/4c022551dedb_number-birthday-candles-!j.web.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/star-and-heart-shape-birthday-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/470d21cf3cd5_star-and-heart-shape-birthday-.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/happy-birthday-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/ea90fe49f61e_happy-birthday-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/happy-birthday-letter-party-candles-wholesale-!j.webp?width=150": "resources/www.birthdaycakecandle.com/1dffcfe38a6b_happy-birthday-letter-party-ca.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2602/cute-bear-party-candles-1362-!j.webp?width=150": "resources/www.birthdaycakecandle.com/58f5d40effa6_cute-bear-party-candles-1362-!.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/dinner-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/435c13bc0a34_dinner-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/votive-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/97408be35199_votive-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2601/pillar-candles-!j.webp?width=150": "resources/www.birthdaycakecandle.com/d4dcfb7edf25_pillar-candles-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2511/3f757730a546a806cda47dbf3dfa8a86-!j.webp": "resources/www.birthdaycakecandle.com/3f757730a546a806cda47dbf3dfa8a86-!j.webp",
+    "https://www.birthdaycakecandle.com/uploads-lz/2511/logo-2.png": "resources/www.birthdaycakecandle.com/6cbac1cc3f02_logo-2.png",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/08cdef3e519673ff0c411180784ae093-6549.jpg": "resources/www.birthdaycakecandle.com/d6e7fe3d24c8_08cdef3e519673ff0c411180784ae093-6549.jpg",
+    "https://www.birthdaycakecandle.com/uploads-lz/2512/pexels-esrakorkmaz-18777753-!j.webp": "resources/www.birthdaycakecandle.com/6c1e933fbf97_pexels-esrakorkmaz-18777753-!j.webp"
+  },
+  "local_to_urls": {
+    "resources/www.birthdaycakecandle.com/e319f1b428bd_shared-pc-ltr.min.css": [
+      "https://www.birthdaycakecandle.com/shared/css/shared-pc-ltr.min.css?v=471222"
+    ],
+    "resources/www.birthdaycakecandle.com/4600f289073e_cmsfont2.woff2": [
+      "https://www.birthdaycakecandle.com/shared/fonts/cmsfont2.woff2?v=471222"
+    ],
+    "resources/www.birthdaycakecandle.com/b5c39aa702b0_shared.min.js": [
+      "https://www.birthdaycakecandle.com/shared/js/shared.min.js?v=471222"
+    ],
+    "resources/www.birthdaycakecandle.com/da0a47244b3c_Inter-Medium.woff2": [
+      "https://www.birthdaycakecandle.com/theme/skin-lz/dist/fonts/Inter-Medium.woff2"
+    ],
+    "resources/www.birthdaycakecandle.com/124e2ed72580_Inter-Regular.woff2": [
+      "https://www.birthdaycakecandle.com/theme/skin-lz/dist/fonts/Inter-Regular.woff2"
+    ],
+    "resources/www.birthdaycakecandle.com/bf9d6f925ee9_Inter-SemiBold.woff2": [
+      "https://www.birthdaycakecandle.com/theme/skin-lz/dist/fonts/Inter-SemiBold.woff2"
+    ],
+    "resources/www.birthdaycakecandle.com/bbbeb6c53084_pexels-ekaterina-bolovtsova-63.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-ekaterina-bolovtsova-6311803-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/155fe83213b5_pexels-olha-ruskykh-6954597-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-olha-ruskykh-6954597-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/1f73ccb4630f_ds-1-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2511/ds-1-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/33216f58a551_ds-2-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2511/ds-2-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/179bff503f84_ds-3-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2511/ds-3-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/33373eb67955_logo-2-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2511/logo-2-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/50e2b47b8e37_08cdef3e519673ff0c411180784ae0.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/08cdef3e519673ff0c411180784ae093-6549-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/8320e1e08325_0f5963d9e41cb989bcf60c79315caa.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/0f5963d9e41cb989bcf60c79315caa72-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/41c198223483_1ac914871c9d3f616170583cee9187.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/1ac914871c9d3f616170583cee91875b-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/54e07acd1d13_2928e16a4a6a4c9ebe9855e4b6fcf3.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/2928e16a4a6a4c9ebe9855e4b6fcf3da-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/0dd9a3831622_6b7edd48132430ece9b5090b608e12.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/6b7edd48132430ece9b5090b608e1275-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/3002ee63169f_7af75548c67b5836e3fc875523b15d.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/7af75548c67b5836e3fc875523b15d91-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/58d6319023ed_birthday-candle-7286-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/birthday-candle-7286-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/9bbcab64c8eb_c6302c29f1903336127e8a366ef961.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/c6302c29f1903336127e8a366ef9616c-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/cc78e460329d_candle-scope-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/candle-scope-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/ca1a54994e51_christmas-trees-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/christmas-trees-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/b8dfe45f3e9f_curved-wave-shape-cake-candle-.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/curved-wave-shape-cake-candle-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/9a2162c472ee_dinner-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/dinner-candle-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/e93f0ed735c3_oem-9934-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/oem-9934-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/95ca9be4f1b6_packing-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/packing-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/486602fb20af_smile-party-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/smile-party-candle-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/66745c82182e_thin-spiral-birthday-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/thin-spiral-birthday-candle-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/b76556d26828_digit-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/digit-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/fb45513fed76_logo-2.ico": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/logo-2.ico"
+    ],
+    "resources/www.birthdaycakecandle.com/72941c29269b_long-thin-birthday-candles-!j..webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/long-thin-birthday-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/bd04eb5ea713_scented-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/scented-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/73dd6f942098_spiral-birthday-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/spiral-birthday-candle-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/31c992c8eab4_banner-inner-1-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/banner-inner-1-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/b3a00549f50f_33a79516e5a9b603fe51c199b71437.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/33a79516e5a9b603fe51c199b714379c-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/1fb3695946e8_3fe8cb63af4632f6e357c75b13ad3a.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/3fe8cb63af4632f6e357c75b13ad3a77-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/9395662a28cc_7447f54546f2ea633e79be6e43818c.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/7447f54546f2ea633e79be6e43818c63-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/175501f23580_7a385a3126767de2bf72599180d77a.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/7a385a3126767de2bf72599180d77a5e-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/b2c50b185614_880a7323dc92aac6eeb0ce8e8e685d.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/880a7323dc92aac6eeb0ce8e8e685d1c-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/de0525143540_a6cf238a478f37694ff5f00c756279.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/a6cf238a478f37694ff5f00c756279fd-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/ac5936936457_baf28d7cd5831151a1db7b670c5639.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/baf28d7cd5831151a1db7b670c5639c1-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/143ab6b2467b_c960bc435d4ba7a2a49e75ffacd3af.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/c960bc435d4ba7a2a49e75ffacd3aff0-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/0d73fb872757_pexels-max-laurell-1958001-106.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/pexels-max-laurell-1958001-10699340-!j-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/0350d0045597_pexels-vlada-karpovich-6755869.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-vlada-karpovich-6755869-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/79f81b378336_27912fe2306f68eedb5b798c1d9033.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/27912fe2306f68eedb5b798c1d90339b-4433-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/47f9727614c3_39bf371bc8eabc4e806ffdcb46ef93.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/39bf371bc8eabc4e806ffdcb46ef93ed-1690-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/3dee5a1c13ef_6bcac2c648472e92d5642589832d02.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/6bcac2c648472e92d5642589832d02c2-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/0e9785a301f4_77cd1fa09372cb909af09d0024b5c3.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/77cd1fa09372cb909af09d0024b5c3ad-3317-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/a3450b984c78_ba552e9fbc0409d34fce1e505494b6.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/ba552e9fbc0409d34fce1e505494b66b-9179-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/50620cd38f97_logo-customization-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/logo-customization-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/79138912537b_beeswax-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/beeswax-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/1b141daaa747_beeswax-candles-2339-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/beeswax-candles-2339-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/c92142439ec6_rolled-beeswax-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/rolled-beeswax-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/107a7a3c3ee1_twisted-birthday-candle-!j.web.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/twisted-birthday-candle-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/e537da91ce77_happy-birthday-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/happy-birthday-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/4e608cd5f61c_cherry-birthday-candles-!j.web.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/cherry-birthday-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/9e042962869a_cute-bear-party-candles-1362-!.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/cute-bear-party-candles-1362-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/f14fede02697_happy-birthday-letter-party-ca.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/happy-birthday-letter-party-candles-wholesale-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/3b3b813fe043_number-birthday-candles-!j.web.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/number-birthday-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/fe776c99e367_pentagram-party-candle-7254-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/pentagram-party-candle-7254-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/b33dc6c37875_star-and-heart-shape-birthday-.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/star-and-heart-shape-birthday-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/966507b6a8cd_stick-shape-design-birthday-ca.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/stick-shape-design-birthday-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/eb9031dca3cb_smile-party-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/smile-party-candle-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/e9aa202761cd_curved-wave-shape-cake-candle-.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/curved-wave-shape-cake-candle-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/971d28cdb65b_digit-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/digit-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/edb1f3fea695_long-thin-birthday-candles-!j..webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/long-thin-birthday-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/2347c5bf6d58_spiral-birthday-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/spiral-birthday-candle-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/14746b3712f1_thin-spiral-birthday-candle-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/thin-spiral-birthday-candle-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/7ba644afc148_birthday-candle-7286-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/birthday-candle-7286-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/a3403b15a82f_bright-candle-8900-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/bright-candle-8900-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/40494f75b899_unsplash_78a265wpio4-1-2546-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/unsplash_78a265wpio4-1-2546-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/e8ce6b1041a3_choose_bottle_1_2_13332273d9-!.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/choose_bottle_1_2_13332273d9-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/fb5a204fcce1_choose_drink_1_2_4310d4481e-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/choose_drink_1_2_4310d4481e-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/b399377371fb_individuation-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/individuation-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/5e28eebe712b_individuation1-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/individuation1-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/91cb434cd4ad_individuation2-!p.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/individuation2-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/8146641f0501_small_labels_6592194f0b-6258-!.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/small_labels_6592194f0b-6258-!p.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/25b420b9b793_dinner-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/dinner-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/a8ffe8b8f911_pexels-leeloothefirst-5264677-.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2506/pexels-leeloothefirst-5264677-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/47aaf7a92542_customize-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/customize-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/39b87b4c7ea6_votive-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/votive-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/1a3cb8198227_pillar-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/pillar-candles-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/6ae023a252a6_scented-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/scented-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/bf694aac5b32_rolled-beeswax-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/rolled-beeswax-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/3ffecfd3db4a_beeswax-candles-2339-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/beeswax-candles-2339-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/ba7fe2fd167c_stick-shape-design-birthday-ca.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/stick-shape-design-birthday-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/aafc21410164_twisted-birthday-candle-!j.web.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/twisted-birthday-candle-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/5129623da69f_cherry-birthday-candles-!j.web.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/cherry-birthday-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/88bb05eba721_pentagram-party-candle-7254-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/pentagram-party-candle-7254-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/4c022551dedb_number-birthday-candles-!j.web.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/number-birthday-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/470d21cf3cd5_star-and-heart-shape-birthday-.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/star-and-heart-shape-birthday-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/ea90fe49f61e_happy-birthday-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/happy-birthday-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/1dffcfe38a6b_happy-birthday-letter-party-ca.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/happy-birthday-letter-party-candles-wholesale-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/58f5d40effa6_cute-bear-party-candles-1362-!.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2602/cute-bear-party-candles-1362-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/435c13bc0a34_dinner-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/dinner-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/97408be35199_votive-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/votive-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/d4dcfb7edf25_pillar-candles-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2601/pillar-candles-!j.webp?width=150"
+    ],
+    "resources/www.birthdaycakecandle.com/3f757730a546a806cda47dbf3dfa8a86-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2511/3f757730a546a806cda47dbf3dfa8a86-!j.webp"
+    ],
+    "resources/www.birthdaycakecandle.com/6cbac1cc3f02_logo-2.png": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2511/logo-2.png"
+    ],
+    "resources/www.birthdaycakecandle.com/d6e7fe3d24c8_08cdef3e519673ff0c411180784ae093-6549.jpg": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/08cdef3e519673ff0c411180784ae093-6549.jpg"
+    ],
+    "resources/www.birthdaycakecandle.com/6c1e933fbf97_pexels-esrakorkmaz-18777753-!j.webp": [
+      "https://www.birthdaycakecandle.com/uploads-lz/2512/pexels-esrakorkmaz-18777753-!j.webp"
+    ]
+  },
+  "download_stats": {
+    "success": 97,
+    "failed": 3,
+    "too_large": 0,
+    "timeout": 0,
+    "ignored": 1
+  },
+  "blocked_domains": {},
+  "dropped_links_count": 0
+}

@@ -1,0 +1,20 @@
+{
+  "page_url": "https://www.birthdaycakecandle.com/privacy-policy",
+  "total_discovered": 0,
+  "initial_discovered_count": 0,
+  "post_interaction_discovered_count": 0,
+  "downloaded_count": 0,
+  "unresolved_count": 0,
+  "discovered_urls": [],
+  "initial_discovered_urls": [],
+  "post_interaction_discovered_urls": [],
+  "downloaded_url_to_local": {},
+  "unresolved_urls": [],
+  "network_observed_urls": [],
+  "interaction_summary": {
+    "enabled": false,
+    "clicked_count": 0,
+    "clicked": []
+  },
+  "api_samples_file": null
+}

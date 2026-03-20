@@ -1,0 +1,62 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import InquiryPanel from '@/components/sections/InquiryPanel.astro';
+import NewsGrid from '@/components/sections/NewsGrid.astro';
+import { getNews, getNewsBySlugs, textToParagraphs } from '@/lib/content';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const news = await getNews();
+  return news.map((item) => ({ params: { slug: item.slug } }));
+}
+
+const article = (await getNews()).find((item) => item.slug === Astro.params.slug);
+
+if (!article) {
+  throw new Error(`News article not found: ${Astro.params.slug ?? 'unknown'}`);
+}
+
+const relatedNews = await getNewsBySlugs(article.entry.relatedNewsSlugs ?? []);
+const contentBlocks = article.entry.contentBlocks?.length
+  ? article.entry.contentBlocks
+  : textToParagraphs(article.entry.body || article.entry.summary).map((paragraph) => ({
+      type: 'paragraph',
+      text: paragraph,
+      image: '',
+      imageAlt: '',
+      caption: '',
+    }));
+---
+
+<BaseLayout title={article.entry.seo.title || article.entry.title} description={article.entry.seo.description || article.entry.summary} image={article.entry.seo.image?.src}>
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/news">News</a><span>/</span><span>{article.entry.title}</span></div>
+      <h1 class="section-title" style="margin-top:1rem;">{article.entry.title}</h1>
+      <div class="meta">{article.entry.publishedAt}</div>
+      {article.entry.coverImage?.src ? <img src={article.entry.coverImage.src} alt={article.entry.coverImage.alt || article.entry.title} class="panel" style="margin:1.5rem 0 2rem;aspect-ratio:16/7;object-fit:cover;" /> : null}
+      <div class="panel content-prose news-article-body">
+        {contentBlocks.map((block) =>
+          block.type === 'image' && block.image ? (
+            <figure class="news-block-image">
+              <img src={block.image} alt={block.imageAlt || article.entry.title} />
+              {block.caption ? <figcaption>{block.caption}</figcaption> : null}
+            </figure>
+          ) : block.text ? (
+            <p>{block.text}</p>
+          ) : null
+        )}
+      </div>
+    </div>
+  </section>
+  {relatedNews.length ? <NewsGrid title="Related News" items={relatedNews} /> : null}
+  {article.entry.inquiry?.title ? (
+    <InquiryPanel
+      title={article.entry.inquiry.title}
+      description={article.entry.inquiry.description}
+      buttonLabel={article.entry.inquiry.buttonLabel}
+      buttonHref={article.entry.inquiry.buttonHref}
+    />
+  ) : null}
+</BaseLayout>

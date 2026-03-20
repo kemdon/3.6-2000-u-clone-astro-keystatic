@@ -1,0 +1,15 @@
+{
+  "start_url": "https://www.birthdaycakecandle.com/",
+  "generated_at": "2026-03-09T00:32:52.735128",
+  "pages_file": "sitemap.json",
+  "resources_file": "resources_manifest.json",
+  "rebuild_prompt_context_file": "rebuild_prompt_context.json",
+  "pages_root": "pages",
+  "resources_root": "resources",
+  "notes": [
+    "Each page folder may contain page_resources.json with discovered/downloaded/unresolved assets.",
+    "Use resources_manifest.local_to_urls to trace each local file back to original URL variants.",
+    "api_samples.json contains key XHR/Fetch request/response previews for reconstruction.",
+    "Preview cloned pages through a local HTTP server (not file://) to avoid font/CORS rendering issues."
+  ]
+}
