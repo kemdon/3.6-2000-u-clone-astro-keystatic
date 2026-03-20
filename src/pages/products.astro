@@ -25,7 +25,7 @@ const [categories, page] = await Promise.all([getCategories(), getProductsPage()
           {page.customOptionsHeading?.description ? <p class="section-copy">{page.customOptionsHeading.description}</p> : null}
         </div>
         <div class="custom-option-grid">
-          {page.customOptions.map((item) => (
+          {page.customOptions.map((item: { title?: string; description?: string; image?: { src?: string; alt?: string } | null; buttonHref?: string; buttonLabel?: string }) => (
             <article class="panel custom-option-card">
               {item.image?.src ? <img src={item.image.src} alt={item.image.alt || item.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
               <h3>{item.title}</h3>

@@ -12,7 +12,7 @@ const [site, navigation] = await Promise.all([getSite(), getNavigation()]);
     </a>
     <div class="header-nav-shell">
       <nav class="nav" aria-label="主导航">
-        {navigation.headerLinks.map((link) => (
+        {navigation.headerLinks.map((link: { href?: string; label?: string }) => (
           <a href={link.href}>{link.label}</a>
         ))}
         {site.downloadFile ? (

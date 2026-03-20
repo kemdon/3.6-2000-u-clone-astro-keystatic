@@ -1,4 +1,3 @@
-import { reader } from './keystatic';
 type MediaEntry = {
   title?: string;
   assetType?: string;
@@ -8,24 +7,34 @@ type MediaEntry = {
   alt?: string | null;
   description?: string | null;
 };
-type PageEntry = NonNullable<Awaited<ReturnType<typeof reader.collections.pages.read>>>;
-type ProductEntry = NonNullable<Awaited<ReturnType<typeof reader.collections.products.read>>>;
-type NewsEntry = NonNullable<Awaited<ReturnType<typeof reader.collections.news.read>>>;
 
-const pageModules = import.meta.glob('../../content/pages/*/index.json', { eager: true, import: 'default' }) as Record<string, PageEntry>;
-const productModules = import.meta.glob('../../content/products/*/index.json', { eager: true, import: 'default' }) as Record<string, ProductEntry>;
-const newsModules = import.meta.glob('../../content/news/*/index.json', { eager: true, import: 'default' }) as Record<string, NewsEntry>;
+const siteModule = import.meta.glob('../../content/settings/site.json', { eager: true, import: 'default' }) as Record<string, any>;
+const navigationModule = import.meta.glob('../../content/navigation/main.json', { eager: true, import: 'default' }) as Record<string, any>;
+const homeModule = import.meta.glob('../../content/home/index.json', { eager: true, import: 'default' }) as Record<string, any>;
+const newsPageModule = import.meta.glob('../../content/newsPage/index.json', { eager: true, import: 'default' }) as Record<string, any>;
+const productsPageModule = import.meta.glob('../../content/productsPage/index.json', { eager: true, import: 'default' }) as Record<string, any>;
+const pageModules = import.meta.glob('../../content/pages/*/index.json', { eager: true, import: 'default' }) as Record<string, any>;
+const categoryModules = import.meta.glob('../../content/productCategories/*.json', { eager: true, import: 'default' }) as Record<string, any>;
+const productModules = import.meta.glob('../../content/products/*/index.json', { eager: true, import: 'default' }) as Record<string, any>;
+const newsModules = import.meta.glob('../../content/news/*/index.json', { eager: true, import: 'default' }) as Record<string, any>;
+const mediaModules = import.meta.glob('../../content/mediaLibrary/*.json', { eager: true, import: 'default' }) as Record<string, MediaEntry>;
 
-function entriesFromModules<T>(modules: Record<string, T>) {
+function getSingleton<T>(modules: Record<string, T>) {
+  return Object.values(modules)[0];
+}
+
+function entriesFromModules<T>(modules: Record<string, T>, mode: 'nested' | 'flat') {
   return Object.entries(modules).map(([filePath, entry]) => ({
-    slug: filePath.split('/').at(-2) || '',
+    slug:
+      mode === 'nested'
+        ? filePath.split('/').at(-2) || ''
+        : filePath.split('/').at(-1)?.replace(/\.json$/, '') || '',
     entry,
   }));
 }
 
 async function getMediaMap() {
-  const items = await reader.collections.mediaLibrary.all();
-  return new Map(items.map((item) => [item.slug, item.entry as MediaEntry]));
+  return new Map(entriesFromModules(mediaModules, 'flat').map((item) => [item.slug, item.entry]));
 }
 
 function isRecord(value: unknown): value is Record<string, any> {
@@ -92,43 +101,43 @@ async function resolveContent<T>(value: T) {
 }
 
 export async function getSite() {
-  return resolveContent(await reader.singletons.site.readOrThrow());
+  return resolveContent(getSingleton(siteModule));
 }
 
 export async function getNavigation() {
-  return reader.singletons.navigation.readOrThrow();
+  return getSingleton(navigationModule);
 }
 
 export async function getHome() {
-  return resolveContent(await reader.singletons.home.readOrThrow());
+  return resolveContent(getSingleton(homeModule));
 }
 
 export async function getNewsPage() {
-  return resolveContent(await reader.singletons.newsPage.readOrThrow());
+  return resolveContent(getSingleton(newsPageModule));
 }
 
 export async function getProductsPage() {
-  return resolveContent(await reader.singletons.productsPage.readOrThrow());
+  return resolveContent(getSingleton(productsPageModule));
 }
 
 export async function getPages() {
-  const pages = entriesFromModules(pageModules);
+  const pages = entriesFromModules(pageModules, 'nested');
   return Promise.all(pages.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
 }
 
 export async function getPageBySlug(slug: string) {
-  const page = entriesFromModules(pageModules).find((item) => item.slug === slug)?.entry ?? null;
+  const page = entriesFromModules(pageModules, 'nested').find((item) => item.slug === slug)?.entry ?? null;
   return page ? resolveContent(page) : null;
 }
 
 export async function getCategories() {
-  const items = await reader.collections.productCategories.all();
+  const items = entriesFromModules(categoryModules, 'flat');
   const resolved = await Promise.all(items.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
   return resolved.sort((a, b) => (a.entry.sortOrder ?? 0) - (b.entry.sortOrder ?? 0));
 }
 
 export async function getCategoryBySlug(slug: string) {
-  const category = await reader.collections.productCategories.read(slug);
+  const category = entriesFromModules(categoryModules, 'flat').find((item) => item.slug === slug)?.entry ?? null;
   return category ? resolveContent(category) : null;
 }
 
@@ -146,7 +155,7 @@ export async function getCategoriesBySlugs(slugs: readonly (string | null)[]) {
 }
 
 export async function getProducts() {
-  const products = entriesFromModules(productModules);
+  const products = entriesFromModules(productModules, 'nested');
   return Promise.all(products.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
 }
 
@@ -161,7 +170,7 @@ export async function getProductRecordBySlug(categorySlug: string, productSlug: 
 }
 
 export async function getNews() {
-  const items = entriesFromModules(newsModules);
+  const items = entriesFromModules(newsModules, 'nested');
   const resolved = await Promise.all(items.map(async (item) => ({ ...item, entry: await resolveContent(item.entry) })));
   return resolved.sort((a, b) => `${b.entry.publishedAt}`.localeCompare(`${a.entry.publishedAt}`));
 }

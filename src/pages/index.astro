@@ -52,7 +52,7 @@ const customizationParagraphs = (home.customization?.description ?? '').split(/\
         <div class="eyebrow">{home.company.eyebrow}</div>
         <h2 class="section-title" style="margin-top:0.5rem;">{home.company.title}</h2>
         <div class="content-prose">
-          {companyParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {companyParagraphs.map((paragraph: string) => <p>{paragraph}</p>)}
         </div>
         <div style="margin-top:1.5rem;">
           <a class="button secondary" href={home.company.buttonHref}>{home.company.buttonLabel}</a>
@@ -74,7 +74,7 @@ const customizationParagraphs = (home.customization?.description ?? '').split(/\
         <p class="section-copy">Explore our custom and wholesale solutions designed to fit OEM projects, private label launches, and stable repeat orders.</p>
       </div>
       <div class="home-solution-grid">
-        {home.solutions.map((item) => (
+        {home.solutions.map((item: { title?: string; description?: string; image?: { src?: string; alt?: string } | null }) => (
           <article class="panel home-solution-card">
             {item.image?.src ? <img class="solution-icon" src={item.image.src} alt={item.image.alt || item.title} /> : null}
             <h3>{item.title}</h3>
@@ -94,7 +94,7 @@ const customizationParagraphs = (home.customization?.description ?? '').split(/\
         <div class="eyebrow">Customized Service</div>
         <h2 class="section-title" style="margin-top:0.5rem;">{home.customization.title}</h2>
         <div class="content-prose">
-          {customizationParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {customizationParagraphs.map((paragraph: string) => <p>{paragraph}</p>)}
         </div>
         <div style="margin-top:1.5rem;">
           <a class="button" href={home.customization.buttonHref}>{home.customization.buttonLabel}</a>
@@ -111,7 +111,7 @@ const customizationParagraphs = (home.customization?.description ?? '').split(/\
         <p class="section-copy">We offer flexible customization options across materials, structures, colors, and branding to meet different market requirements.</p>
       </div>
       <div class="custom-option-grid">
-        {home.customOptions.map((item) => (
+        {home.customOptions.map((item: { title?: string; description?: string; image?: { src?: string; alt?: string } | null; buttonHref?: string; buttonLabel?: string }) => (
           <article class="panel custom-option-card">
             {item.image?.src ? <img src={item.image.src} alt={item.image.alt || item.title} style="aspect-ratio:4/3;object-fit:cover;" /> : null}
             <h3>{item.title}</h3>

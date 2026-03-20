@@ -37,7 +37,7 @@ const contentBlocks = article.entry.contentBlocks?.length
       <div class="meta">{article.entry.publishedAt}</div>
       {article.entry.coverImage?.src ? <img src={article.entry.coverImage.src} alt={article.entry.coverImage.alt || article.entry.title} class="panel" style="margin:1.5rem 0 2rem;aspect-ratio:16/7;object-fit:cover;" /> : null}
       <div class="panel content-prose news-article-body">
-        {contentBlocks.map((block) =>
+        {contentBlocks.map((block: { type?: string; text?: string; image?: string; imageAlt?: string; caption?: string }) =>
           block.type === 'image' && block.image ? (
             <figure class="news-block-image">
               <img src={block.image} alt={block.imageAlt || article.entry.title} />

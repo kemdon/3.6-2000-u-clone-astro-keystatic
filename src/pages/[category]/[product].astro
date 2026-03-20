@@ -42,7 +42,7 @@ const currentCategory = categories.find((item) => item.slug === product.entry.ca
             {product.entry.coverImage?.src ? <img src={product.entry.coverImage.src} alt={product.entry.coverImage.alt || product.entry.title} style="aspect-ratio:4/3;object-fit:cover;border-radius:20px;" /> : null}
             {product.entry.gallery?.length ? (
               <div class="grid" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:1rem;">
-                {product.entry.gallery.slice(0, 6).map((image) => <img src={image.src} alt={image.alt || product.entry.title} style="aspect-ratio:1/1;object-fit:cover;border-radius:16px;" />)}
+                {product.entry.gallery.slice(0, 6).map((image: { src?: string; alt?: string }) => <img src={image.src} alt={image.alt || product.entry.title} style="aspect-ratio:1/1;object-fit:cover;border-radius:16px;" />)}
               </div>
             ) : null}
           </div>
@@ -54,7 +54,7 @@ const currentCategory = categories.find((item) => item.slug === product.entry.ca
               <>
                 <h2 style="margin-top:2rem;">Key Highlights</h2>
                 <ul class="section-copy product-highlight-list">
-                  {product.entry.highlights.map((item) => <li>{item}</li>)}
+                  {product.entry.highlights.map((item: string) => <li>{item}</li>)}
                 </ul>
               </>
             ) : null}
@@ -64,7 +64,7 @@ const currentCategory = categories.find((item) => item.slug === product.entry.ca
               <div class="eyebrow">Specifications</div>
               <h2 style="margin:0.4rem 0 1rem;">Product Data</h2>
               <dl class="spec-grid">
-                {product.entry.specs.map((spec) => (
+                {product.entry.specs.map((spec: { label?: string; value?: string }) => (
                   <>
                     <dt>{spec.label}</dt>
                     <dd>{spec.value}</dd>

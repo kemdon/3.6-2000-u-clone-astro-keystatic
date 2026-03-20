@@ -13,7 +13,7 @@ const [site, navigation] = await Promise.all([getSite(), getNavigation()]);
         <div class="meta">{site.email} {site.phone ? `· ${site.phone}` : ''}</div>
       </div>
       <nav class="nav" aria-label="页脚导航">
-        {navigation.footerLinks.map((link) => (
+        {navigation.footerLinks.map((link: { href?: string; label?: string }) => (
           <a href={link.href}>{link.label}</a>
         ))}
       </nav>
