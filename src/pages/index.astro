@@ -7,7 +7,24 @@ import NewsGrid from '@/components/sections/NewsGrid.astro';
 import InquiryPanel from '@/components/sections/InquiryPanel.astro';
 import { getCategories, getHome, getNews, getProducts } from '@/lib/content';
 
-const [home, categories, products, news] = await Promise.all([getHome(), getCategories(), getProducts(), getNews()]);
+let home;
+let categories;
+let products;
+let news;
+
+try {
+  [home, categories, products, news] = await Promise.all([getHome(), getCategories(), getProducts(), getNews()]);
+  console.log('[home-route]', JSON.stringify({
+    homeLoaded: Boolean(home?.hero?.title),
+    categories: categories?.length ?? -1,
+    products: products?.length ?? -1,
+    news: news?.length ?? -1,
+  }));
+} catch (error) {
+  console.error('[home-route:data-error]', error instanceof Error ? { message: error.message, stack: error.stack } : error);
+  throw error;
+}
+
 const featuredCategories = categories.filter((item) => home.featuredCategorySlugs.includes(item.slug));
 const featuredProducts = products.filter((item) => home.featuredProductSlugs.includes(item.slug));
 const featuredNews = news.filter((item) => home.featuredNewsSlugs.includes(item.slug));
